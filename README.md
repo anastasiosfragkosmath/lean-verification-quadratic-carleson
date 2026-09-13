@@ -1,4 +1,4 @@
-# Quadratic Carleson
+# Lean verification for *Endpoint Estimates for Stein's Purely Quadratic Carleson Operator*
 
 A Lean 4 + Mathlib formalization of the results in Anastasios Fragkos, Ben
 Krause, and Michael Lacey, [*Endpoint Estimates for Stein's Purely Quadratic
@@ -8,10 +8,12 @@ Carleson Operator*](https://arxiv.org/abs/2609.04101v1).
 
 The following main results have been formally verified in Lean:
 
-- failure of modular estimates below `t log₂ t` for the lacunary operator and
-  the resulting full-modulation operator consequence;
-- the full-modulation `L log₁ L` principal-value endpoint;
-- the lacunary `L (log₂ L)² log₄ L` principal-value endpoint.
+- failure of modular estimates below $t\log_2 t$ for
+  $\mathcal{C}_{2,\mathsf{lac}}$ and the resulting consequence for
+  $\mathcal{C}_2$;
+- the $L\log_1 L$ modular estimate for $\mathcal{C}_2$;
+- the $L(\log_2 L)^2\log_4 L$ modular estimate for
+  $\mathcal{C}_{2,\mathsf{lac}}$.
 
 `lake build` compiles the core formalization with the pinned toolchain.
 The source-policy checks prohibit placeholders and proof-bypass mechanisms in
