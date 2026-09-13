@@ -7,10 +7,12 @@ the Lean audit checks transitive axioms of the explicitly audited declarations.
 """
 
 import argparse
+import fnmatch
 import json
 import os
 from pathlib import Path
 import re
+import shutil
 import subprocess
 import sys
 
@@ -71,6 +73,15 @@ REPORT = re.compile(
 
 
 def inventory(pattern):
+    if shutil.which("rg") is None:
+        files = []
+        for directory, directories, filenames in os.walk(ROOT):
+            directories[:] = [name for name in directories if name not in {".lake", ".git"}]
+            files.extend(
+                Path(directory) / name for name in filenames if fnmatch.fnmatch(name, pattern)
+            )
+        return sorted(files)
+
     result = subprocess.run(
         ["rg", "--no-config", "--files", "--hidden", "--no-ignore", "-0", "-g", pattern,
          "-g", "!**/.lake/**", "-g", "!**/.git/**", "."],
@@ -79,6 +90,17 @@ def inventory(pattern):
     if result.returncode not in (0, 1):
         raise ValueError("Source inventory failed: " + result.stderr.decode())
     return [ROOT / part.decode() for part in result.stdout.split(b"\0") if part]
+
+
+def fallback_forbidden_source_matches(sources):
+    forbidden = re.compile(FORBIDDEN_SOURCE, re.MULTILINE)
+    matches = []
+    for source in sources:
+        lines = source.read_text(encoding="utf-8").splitlines()
+        for line_number, line in enumerate(lines, start=1):
+            if forbidden.search(line):
+                matches.append(f"./{source.relative_to(ROOT)}:{line_number}:{line}")
+    return matches
 
 
 def reject_unscanned_symlinks():
@@ -98,15 +120,20 @@ def check_sources():
     sources = inventory("*.lean")
     if not sources:
         raise ValueError("No project Lean sources found; refusing an empty scan.")
-    result = subprocess.run(
-        ["rg", "--no-config", "--text", "-n", "--hidden", "--no-ignore", "-g", "*.lean",
-         "-g", "!**/.lake/**", "-g", "!**/.git/**", FORBIDDEN_SOURCE, "."],
-        cwd=ROOT, capture_output=True, text=True,
-    )
-    if result.returncode == 0:
-        raise ValueError("Forbidden project source tokens:\n" + result.stdout)
-    if result.returncode != 1:
-        raise ValueError("Source scan failed:\n" + result.stderr)
+    if shutil.which("rg") is None:
+        matches = fallback_forbidden_source_matches(sources)
+        if matches:
+            raise ValueError("Forbidden project source tokens:\n" + "\n".join(matches))
+    else:
+        result = subprocess.run(
+            ["rg", "--no-config", "--text", "-n", "--hidden", "--no-ignore", "-g", "*.lean",
+             "-g", "!**/.lake/**", "-g", "!**/.git/**", FORBIDDEN_SOURCE, "."],
+            cwd=ROOT, capture_output=True, text=True,
+        )
+        if result.returncode == 0:
+            raise ValueError("Forbidden project source tokens:\n" + result.stdout)
+        if result.returncode != 1:
+            raise ValueError("Source scan failed:\n" + result.stderr)
     print(f"PASS: source policy ({len(sources)} project Lean files).", flush=True)
 
 
