@@ -1,8 +1,8 @@
 # Lean verification for *Endpoint Estimates for Stein's Purely Quadratic Carleson Operator*
 
-A Lean 4 + Mathlib formalization of the results in Anastasios Fragkos, Ben
-Krause, and Michael Lacey, [*Endpoint Estimates for Stein's Purely Quadratic
-Carleson Operator*](https://arxiv.org/abs/2609.04101v1).
+A Lean 4 + Mathlib formalization of the principal endpoint results in
+Anastasios Fragkos, Ben Krause, and Michael Lacey, [*Endpoint Estimates for
+Stein's Purely Quadratic Carleson Operator*](https://arxiv.org/abs/2609.04101v1).
 
 ## Main results
 
@@ -17,8 +17,8 @@ The following main results have been formally verified in Lean:
 
 `lake build` compiles the core formalization with the pinned toolchain.
 The source-policy checks prohibit placeholders and proof-bypass mechanisms in
-the formalization sources. The explicit axiom audit reports only Lean and
-Mathlib's standard logical axioms for the audited declarations:
+the completed formalization sources. The explicit axiom audit reports only Lean
+and Mathlib's standard logical axioms for the audited declarations:
 `propext`, `Classical.choice`, and `Quot.sound`.
 
 The four headline declarations are also checked by the manual
@@ -70,10 +70,10 @@ checkout: it is a maintainer operation that changes the dependency lockfile.
 The final policy command scans the Lean sources and checks the transitive axioms
 of the 31 explicitly audited declarations.
 
-To inspect the axiom report for the paper-facing declarations directly, run:
+To inspect the axiom report for all audited declarations directly, run:
 
 ```sh
-lake env lean QuadraticCarleson/PaperTheorems.lean
+lake env lean Verification.lean
 ```
 
 Each printed declaration depends only on `propext`, `Classical.choice`, and

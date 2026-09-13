@@ -263,10 +263,10 @@ import QuadraticCarleson.TranslatedBohrUnion
 import QuadraticCarleson.WavePacket
 
 /-!
-# Quadratic Carleson formalization
+# Aggregate imports for the Quadratic Carleson formalization
 
-This is the root module for the checked proofs of “Endpoint Estimates for
-Stein's Purely Quadratic Carleson Operator”.
+This module gathers the completed formalization imports. The root module is
+`QuadraticCarleson`.
 -/
 
 namespace QuadraticCarleson

@@ -12,8 +12,9 @@ the source test domain, strict level sets, modulars, and quantifier order.
 Both negative and positive endpoints use the same genuine principal-value
 operators. The definitions and proofs live in the individually imported files.
 
-This is a reviewable snapshot, not a claim that the author has approved a
-statement freeze or that every auxiliary statement in the paper is covered.
+This review-facing statement map identifies the claims formalized here. It does
+not assert that every auxiliary result cited by the article is formalized in
+this repository.
 -/
 
 open MeasureTheory

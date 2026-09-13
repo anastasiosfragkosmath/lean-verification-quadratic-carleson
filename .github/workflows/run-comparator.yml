@@ -28,16 +28,22 @@ jobs:
           large-packages: false
           docker-images: true
           swap-storage: false
-      - uses: leanprover/lean-action@38fbc41a8c28c4cbaec22d7f7de508ec2e7c0dd9 # v1.5.0
-        with:
-          build: true
-          use-mathlib-cache: true
+      - uses: ./.github/actions/setup-lean
+      - name: Get Mathlib build cache
+        run: lake exe cache get
+      - name: Build completed formalization
+        run: lake build
       - name: Build Comparator statement modules
         run: lake build Challenge Solution
       - uses: actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e # v7.0.0
         with:
           go-version: "1.24.0"
           cache: false
+      - name: Install Rust 1.82.0 for NanoDa
+        run: |
+          rustup toolchain install 1.82.0 --profile minimal --no-self-update
+          rustup run 1.82.0 rustc --version --verbose
+          rustup run 1.82.0 cargo --version
       - name: Run pinned Comparator toolchain
         env:
           COMPARATOR_CACHE: ${{ runner.temp }}/quadratic-carleson-comparator
@@ -81,7 +87,7 @@ jobs:
           GOBIN="$bin_dir" CGO_ENABLED=0 go install "github.com/zouuup/landrun/cmd/landrun@$landrun_commit"
           (cd "$comparator_dir" && lake build comparator)
           (cd "$lean4export_dir" && ELAN_TOOLCHAIN="$project_toolchain" lake build lean4export)
-          (cd "$nanoda_dir" && cargo build --release --locked)
+          (cd "$nanoda_dir" && cargo +1.82.0 build --release --locked)
 
           export COMPARATOR_LANDRUN="$bin_dir/landrun"
           export COMPARATOR_LEAN4EXPORT="$lean4export_dir/.lake/build/bin/lean4export"

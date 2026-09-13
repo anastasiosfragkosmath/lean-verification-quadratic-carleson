@@ -1,2 +1,7 @@
 import QuadraticCarleson.Basic
-import QuadraticCarleson.LacunaryMiddleRange
+
+/-!
+# Quadratic Carleson formalization
+
+Root import module for the completed formalization.
+-/
