@@ -2,6 +2,13 @@
 
 Verified: **2026-09-09, 22:23 UTC**.
 
+> Current-repository note (2026-09-13): this report records the completed
+> core-source snapshot above. The repository now also contains `Challenge.lean`,
+> whose four intentional statement placeholders are checked against
+> `Solution.lean` by the separate manual Comparator workflow. They are not part
+> of the completed core formalization, and this report does not claim that the
+> Comparator workflow has run.
+
 The local Lean formalization of arXiv:2609.04101v1 has passed its completion
 gates. All three headline conclusions and all seven distinct theorem,
 lemma, proposition, and corollary statements in the source have unconditional

@@ -19,6 +19,15 @@ import sys
 
 ROOT = Path(__file__).resolve().parents[1]
 ALLOWED_AXIOMS = frozenset({"propext", "Classical.choice", "Quot.sound"})
+CHALLENGE = ROOT / "Challenge.lean"
+SOLUTION = ROOT / "Solution.lean"
+COMPARATOR_CONFIG = ROOT / "comparator.json"
+CHALLENGE_THEOREMS = (
+    "QuadraticCarleson.PaperTheorems.lacunary_sub_log2_modular_failure",
+    "QuadraticCarleson.PaperTheorems.full_sub_log2_modular_failure",
+    "QuadraticCarleson.PaperTheorems.full_LlogL_endpoint",
+    "QuadraticCarleson.PaperTheorems.lacunary_log2_squared_log4_endpoint",
+)
 FORBIDDEN_SOURCE = (
     r"\b(sorry|admit|sorryAx|axiom|unsafe|implemented_by|extern|native_decide|"
     r"trustCompiler|run_tac|run_cmd|run_elab|elab|macro|opaque)\b|"
@@ -70,6 +79,7 @@ REPORT = re.compile(
     r"does not depend on any axioms)\s*$",
     re.MULTILINE,
 )
+CHALLENGE_PLACEHOLDER = re.compile(r"^\s*sorry\s*$", re.MULTILINE)
 
 
 def inventory(pattern):
@@ -103,6 +113,36 @@ def fallback_forbidden_source_matches(sources):
     return matches
 
 
+def validate_challenge():
+    if not CHALLENGE.is_file() or not SOLUTION.is_file() or not COMPARATOR_CONFIG.is_file():
+        raise ValueError("Comparator challenge, solution, and configuration must all be present.")
+
+    challenge = CHALLENGE.read_text(encoding="utf-8")
+    placeholders = CHALLENGE_PLACEHOLDER.findall(challenge)
+    if len(placeholders) != len(CHALLENGE_THEOREMS):
+        raise ValueError("Challenge.lean must contain exactly one intentional placeholder per target.")
+    challenge_without_placeholders = CHALLENGE_PLACEHOLDER.sub("", challenge)
+    forbidden = re.compile(FORBIDDEN_SOURCE, re.MULTILINE)
+    if forbidden.search(challenge_without_placeholders):
+        raise ValueError("Challenge.lean contains a forbidden declaration outside its placeholders.")
+    for theorem in CHALLENGE_THEOREMS:
+        name = theorem.rsplit(".", maxsplit=1)[1]
+        if not re.search(rf"^theorem {re.escape(name)}\b", challenge, re.MULTILINE):
+            raise ValueError(f"Challenge.lean is missing target theorem {theorem}.")
+
+    solution = SOLUTION.read_text(encoding="utf-8")
+    if "import QuadraticCarleson.PaperTheorems" not in solution:
+        raise ValueError("Solution.lean must import the paper-facing formalization module.")
+
+    config = json.loads(COMPARATOR_CONFIG.read_text(encoding="utf-8"),
+                        object_pairs_hook=unique_object)
+    validate_config(config)
+    if (config.get("challenge_module") != "Challenge"
+            or config.get("solution_module") != "Solution"
+            or config.get("theorem_names") != list(CHALLENGE_THEOREMS)):
+        raise ValueError("Comparator configuration must name the four approved challenge targets.")
+
+
 def reject_unscanned_symlinks():
     def fail_walk(error):
         raise error
@@ -120,21 +160,26 @@ def check_sources():
     sources = inventory("*.lean")
     if not sources:
         raise ValueError("No project Lean sources found; refusing an empty scan.")
+    validate_challenge()
+    implementation_sources = [source for source in sources if source != CHALLENGE]
     if shutil.which("rg") is None:
-        matches = fallback_forbidden_source_matches(sources)
+        matches = fallback_forbidden_source_matches(implementation_sources)
         if matches:
             raise ValueError("Forbidden project source tokens:\n" + "\n".join(matches))
     else:
         result = subprocess.run(
             ["rg", "--no-config", "--text", "-n", "--hidden", "--no-ignore", "-g", "*.lean",
-             "-g", "!**/.lake/**", "-g", "!**/.git/**", FORBIDDEN_SOURCE, "."],
+             "-g", "!Challenge.lean", "-g", "!**/.lake/**", "-g", "!**/.git/**",
+             FORBIDDEN_SOURCE, "."],
             cwd=ROOT, capture_output=True, text=True,
         )
         if result.returncode == 0:
             raise ValueError("Forbidden project source tokens:\n" + result.stdout)
         if result.returncode != 1:
             raise ValueError("Source scan failed:\n" + result.stderr)
-    print(f"PASS: source policy ({len(sources)} project Lean files).", flush=True)
+    print("PASS: source policy "
+          f"({len(implementation_sources)} non-challenge Lean files; "
+          f"{len(CHALLENGE_THEOREMS)} approved challenge placeholders).", flush=True)
 
 
 def validate_config(config):
@@ -171,6 +216,7 @@ def check_configs():
                 )):
             validate_config(config)
             count += 1
+    validate_challenge()
     print(f"PASS: config policy ({count} Comparator configurations present).", flush=True)
     if count == 0:
         print("NOTE: no Comparator configuration; Comparator has NOT run.", flush=True)
