@@ -471,14 +471,6 @@ theorem lintegral_offsetTailMaximalOn_interpolationLow_le_root
       exact eLpNorm_offsetTailMaximalOn_le_root
         hA hlam scale hscale f hs hM hmass I₀ hsub hgap ell₀ N hnonneg hbound
 
-#print axioms lintegral_offsetTailMaximalOn_interpolationLow_le_root
-#print axioms directQuadraticTailEnergy_eq_constant_mul
-#print axioms eLpNorm_offsetTailMaximalOn_le_factored
-#print axioms eLpNorm_offsetTailMaximalOn_le_factored_of_nonnegative_scales
-#print axioms ennreal_dyadic_mass_rpow_half_eq_delta
-#print axioms lintegral_pairing_interpolationLow_ennreal_le_normalized_mul
-#print axioms lintegral_offsetTailMaximalOn_interpolationLow_le_directQuadratic
-#print axioms lintegral_offsetTailMaximalOn_interpolationLow_le_directQuadratic_of_nonnegative_scales
 
 end
 end KrauseLaceyQuadraticDirectLowPairing

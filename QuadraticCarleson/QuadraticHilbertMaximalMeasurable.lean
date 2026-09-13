@@ -200,10 +200,6 @@ theorem measurable_quadraticHilbertMaximalTruncation
   rw [← funext (countableQuadraticHilbertMaximalTruncation_eq lam hfi)]
   exact measurable_countableQuadraticHilbertMaximalTruncation lam hf
 
-#print axioms quadraticHilbertTruncation_eq_oneSidedTails
-#print axioms continuousAt_quadraticHilbertTruncation_radius
-#print axioms countableQuadraticHilbertMaximalTruncation_eq
-#print axioms measurable_quadraticHilbertMaximalTruncation
 
 end
 end QuadraticHilbertMaximalMeasurable

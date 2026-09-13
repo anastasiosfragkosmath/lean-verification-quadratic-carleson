@@ -142,12 +142,6 @@ theorem generation_index_lt_of_proper_subset
     remainingIntervals_antitone S (by omega : n ≤ m) (minimalLayer_subset _ hI)
   exact hne ((mem_minimalLayer_iff.mp hJ).2 I hrem hsub)
 
-#print axioms minimalLayer_pairwiseDisjoint
-#print axioms generation_pairwiseDisjoint
-#print axioms generations_disjoint
-#print axioms remainingIntervals_card_eq_empty
-#print axioms exists_generation_of_mem
-#print axioms generation_index_lt_of_proper_subset
 
 end KrauseLaceyGenerationLayers
 end QuadraticCarleson

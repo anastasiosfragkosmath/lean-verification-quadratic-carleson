@@ -120,9 +120,5 @@ theorem hasSparseOnePBound_finiteRadiusSmoothHighPassMax_of_uniform_positive_fin
     (hasSparseOnePBound_dyadicSmoothHighPassMax_of_uniform_positive_finiteSuffixMax
       lam (finiteRadiusLowerIndex s) hC (hpositive (finiteRadiusLowerIndex s)))
 
-#print axioms enorm_finiteRadiusSmoothHighPassMax_le_dyadicMax
-#print axioms integrable_pairing_dyadicSmoothHighPassMax
-#print axioms hasSparseOnePBound_finiteRadiusSmoothHighPassMax_of_dyadicMax
-#print axioms hasSparseOnePBound_finiteRadiusSmoothHighPassMax_of_uniform_positive_finiteSuffixMax
 
 end QuadraticCarleson.KrauseLaceyFiniteRadiusSmoothSparse

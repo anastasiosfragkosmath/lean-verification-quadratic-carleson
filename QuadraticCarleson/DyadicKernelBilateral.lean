@@ -76,10 +76,5 @@ theorem tsum_dyadicPsi {t : ℝ} (ht : t ≠ 0) :
     (∑' j : ℤ, dyadicPsi j t) = 1 / t :=
   (hasSum_dyadicPsi ht).tsum_eq
 
-#print axioms dyadicPsi_eq_zero_of_zpow_le
-#print axioms dyadicCutoff_lowerEndpoint_eq_zero
-#print axioms exists_dyadicPsi_lower_cutoff
-#print axioms hasSum_dyadicPsi
-#print axioms tsum_dyadicPsi
 
 end QuadraticCarleson

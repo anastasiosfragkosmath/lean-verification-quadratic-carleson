@@ -256,11 +256,6 @@ theorem directQuadratic_pairing_threshold_closure_at_scale
     (directQuadratic_low_threshold_identity p s)
     (directQuadratic_high_threshold_identity p s)
 
-#print axioms directExceptional_subset_maximal
-#print axioms directMaximalExceptionalIntervals_pairwiseDisjoint
-#print axioms directMaximalExceptionalIntervals_length_le
-#print axioms directQuadratic_pairing_threshold_closure
-#print axioms directQuadratic_pairing_threshold_closure_at_scale
 
 end
 end QuadraticCarleson

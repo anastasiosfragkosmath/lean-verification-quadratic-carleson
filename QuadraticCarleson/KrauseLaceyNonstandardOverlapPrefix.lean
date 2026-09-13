@@ -75,8 +75,6 @@ theorem eLpNorm_badSubcollectionPrefixMaximal_le_of_ae_overlapCount_le
     Real.norm_of_nonneg (badSubcollectionPrefixMaximal_nonneg S f I₀ k₀ s scale N M x)]
   exact badSubcollectionPrefixMaximal_le_of_ae_overlapCount_le S f I₀ k₀ s scale N L M hbound x
 
-#print axioms badSubcollectionPrefixMaximal_le_of_ae_overlapCount_le
-#print axioms eLpNorm_badSubcollectionPrefixMaximal_le_of_ae_overlapCount_le
 
 end KrauseLaceyBadScale
 end QuadraticCarleson

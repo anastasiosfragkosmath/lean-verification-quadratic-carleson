@@ -245,15 +245,6 @@ theorem ae_forall_real_limsup_eq_principalValue_norm
   obtain ⟨z, hz⟩ := hx lam
   exact ⟨z, hz, quadraticHilbertL0Limsup_eq_of_principalValue lam f x z hz⟩
 
-#print axioms hasUniformHilbertMaximalWeakBound_of_real
-#print axioms exists_compactSchwartz_lintegral_residual_le
-#print axioms badHilbertCauchySet_subset_maximal_residual
-#print axioms volume_badHilbertCauchySet_eq_zero
-#print axioms exists_principalValue_of_not_mem_badHilbertCauchySet
-#print axioms ae_exists_ordinaryHilbert_principalValue
-#print axioms ae_forall_real_exists_quadraticPrincipalValue
-#print axioms ae_forall_lacunary_exists_quadraticPrincipalValue
-#print axioms ae_forall_real_limsup_eq_principalValue_norm
 
 end HilbertPrincipalValueClosure
 end QuadraticCarleson

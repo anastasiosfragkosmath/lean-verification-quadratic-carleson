@@ -799,19 +799,6 @@ theorem eLpNorm_offsetTailMaximalOn_le_root
   rw [hroot, ENNReal.rpow_two, eLpNorm_two_sq_lintegral]
   simpa only [enorm_eq_self] using hsq
 
-#print axioms directResidueOutput_ae_eq_projected_add_remainder
-#print axioms finitePieceTailMax_directResidueOutput_ae_le_projected_add_remainder
-#print axioms directResidueRemainderMajorant_eq_ofReal
-#print axioms lintegral_directResidueRemainderMajorant_sq_eq
-#print axioms sum_inv_cube_residueScale_le_two
-#print axioms sum_projectionRemainder_residueWeight_le
-#print axioms norm_finiteProjectionErrorMajorant_directResidue_le_centeredSum
-#print axioms norm_finiteProjectionErrorMajorant_directResidue_le_root
-#print axioms lintegral_directResidueRemainderMajorant_sq_le_root
-#print axioms finitePieceTailMax_directResidueOutput_sq_lintegral_le_root
-#print axioms sum_directResidueTailMax_sq_lintegral_le_root
-#print axioms offsetTailMaximalOn_sq_lintegral_le_root
-#print axioms eLpNorm_offsetTailMaximalOn_le_root
 
 end
 end KrauseLaceyQuadraticDirectTailProjection

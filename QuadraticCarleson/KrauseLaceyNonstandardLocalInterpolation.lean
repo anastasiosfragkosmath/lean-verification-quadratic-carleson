@@ -154,9 +154,6 @@ theorem lintegral_nonstandard_pairing_le_threshold
       (eLpNorm_nonstandard_badLengthTailMaximal_le hf I₀ k₀ s hk₀ scale hlam hparent hsub N hN)
       (eLpNorm_interpolationLow_le_rpow g ha (by linarith) hp2 hg)) _
 
-#print axioms intervalL1Average_interpolationHigh_le
-#print axioms eLpNorm_interpolationLow_le_rpow
-#print axioms lintegral_nonstandard_pairing_le_threshold
 
 end KrauseLaceyBadScale
 end QuadraticCarleson

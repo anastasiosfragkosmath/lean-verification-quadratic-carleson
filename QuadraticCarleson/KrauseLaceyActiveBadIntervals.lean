@@ -138,12 +138,6 @@ theorem exists_chargedCell_of_active_above_base
   congr 1
   ring
 
-#print axioms localizedBadPiece_eq_zero_of_inactive
-#print axioms sum_weighted_localizedBadPiece_eq_active
-#print axioms sum_lengthTail_localizedBadPiece_eq_active
-#print axioms sum_generationPrefix_localizedBadPiece_eq_active
-#print axioms exists_badScaleCell_subset_of_active
-#print axioms exists_chargedCell_of_active_above_base
 
 end KrauseLaceyBadScale
 end QuadraticCarleson

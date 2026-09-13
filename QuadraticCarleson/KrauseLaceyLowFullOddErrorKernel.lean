@@ -162,12 +162,6 @@ theorem finiteLowFullPhaseErrorOperator_enorm_le_maximal
         nlinarith [Real.pi_pos]))
       (finiteLowFullPhaseErrorKernel_support_subset htop) hf x
 
-#print axioms continuous_finiteLowFullPhaseErrorKernel
-#print axioms measurable_finiteLowFullPhaseErrorKernel
-#print axioms finiteLowFullPhaseErrorKernel_support_subset
-#print axioms finiteLowFullPhaseErrorKernel_norm_le_abs
-#print axioms finiteLowFullPhaseErrorKernel_norm_le
-#print axioms finiteLowFullPhaseErrorOperator_enorm_le_maximal
 
 end
 end KrauseLaceyLowFullOddReduction

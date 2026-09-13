@@ -73,12 +73,6 @@ theorem paperBlockUpperRadius_bracket (lam : ℝ) (hlam : 0 < lam) (B : ℕ) :
   exact upperRadius_bracket (Real.sqrt lam) (Real.sqrt_pos.mpr hlam)
     (oscillatoryScaleIndex lam 0 hlam.ne') B h.1 h.2.le
 
-#print axioms normalizedRadius_bracket
-#print axioms lowerRadius_bracket
-#print axioms upperRadius_bracket
-#print axioms positiveModulation_scale_bracket
-#print axioms paperBlockLowerRadius_bracket
-#print axioms paperBlockUpperRadius_bracket
 
 end KrauseLaceyNormalizedBlockRadii
 end QuadraticCarleson

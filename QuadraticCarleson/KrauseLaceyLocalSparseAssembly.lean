@@ -128,8 +128,6 @@ theorem exists_three_shift_localized_tail_reduction
   KrauseLaceyThreeShiftGrid.exists_threeShiftForests_globalTailMaximal f (k₀ + s)
     topScale depths maxDepth hdepths
 
-#print axioms local_good_nonstandard_sparse_stopping_step
-#print axioms exists_three_shift_localized_tail_reduction
 
 end KrauseLaceyLocalSparseAssembly
 end QuadraticCarleson

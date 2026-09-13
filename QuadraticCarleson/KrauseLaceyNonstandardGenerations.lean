@@ -164,11 +164,6 @@ theorem norm_nonstandardGenerationLp_sq_le
   exact sum_nonstandard_badPiece_diagonalEnergy_le hf I₀ k₀ s hk₀ scale hlam hparent hsub
     _ (generation_subset _ n)
 
-#print axioms memLp_localizedPiece_of_integrable
-#print axioms inner_localizedPieceLp_eq_zero_of_disjoint
-#print axioms nonstandardGenerationLp_ae_eq
-#print axioms norm_nonstandardGenerationLp_sq_eq
-#print axioms norm_nonstandardGenerationLp_sq_le
 
 end KrauseLaceyBadScale
 end QuadraticCarleson

@@ -131,11 +131,6 @@ theorem enorm_paperLowDyadicOperator_le_dilatedHighSuffix_add_maximal
         (L0Infinity.dilate a ha f) (a * x))
     _ = _ := add_comm _ _
 
-#print axioms smoothHighPass_square_div
-#print axioms normalizedHighBlock_eq_physicalSmoothDifference
-#print axioms enorm_block_sub_normalizedHighBlock_le
-#print axioms enorm_finiteBlock_le_suffixMaxOperator
-#print axioms enorm_paperLowDyadicOperator_le_dilatedHighSuffix_add_maximal
 
 end
 end QuadraticCarleson.KrauseLaceyFiniteBlockHighReduction

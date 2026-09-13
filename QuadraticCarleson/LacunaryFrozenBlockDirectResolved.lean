@@ -96,10 +96,6 @@ theorem hasUniformL0LogSquaredFrozenBlockWeakBounds :
       (2 * directFrozenHighWeakConstant + 384) :=
   fun f ↦ hasLogSquaredFrozenBlockWeakBounds f PositiveHighHeightEstimate.lacunaryHighCutoff 0
 
-#print axioms frozenBlockMaxEnorm_le_highSuffixFamily_add_maximal
-#print axioms hasWeakOneOneBound_frozenHighSuffixFamily
-#print axioms hasLogSquaredFrozenBlockWeakBounds
-#print axioms hasUniformL0LogSquaredFrozenBlockWeakBounds
 
 end
 end QuadraticCarleson.LacunaryFrozenBlockDirectResolved

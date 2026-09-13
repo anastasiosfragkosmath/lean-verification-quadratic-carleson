@@ -251,12 +251,6 @@ theorem exists_finite_threeShift_localizedSum_eq_globalConvolution
           (topScale - (depth : ℤ)) (Finset.univ.biUnion G) hf2 x
       _ = _ := by rw [hinputUnion]
 
-#print axioms finiteShiftGridAddress_interval
-#print axioms finiteThreeShiftFamily_eq_biUnion
-#print axioms finiteThreeShiftFamily_pairwiseDisjoint
-#print axioms finiteThreeShiftFixedScaleInput_eq_of_support_cover
-#print axioms exists_finiteThreeShiftFamily_localization
-#print axioms exists_finite_threeShift_localizedSum_eq_globalConvolution
 
 end
 

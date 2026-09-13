@@ -161,9 +161,6 @@ theorem norm_signed_badPieceLp_sq_le
       (fun I hI ↦ (Finset.mem_filter.mp (hN hI)).2.1))
     (by positivity [intervalL1Average_nonneg f I₀])
 
-#print axioms norm_signed_badPieceLp_sq_le_of_residue
-#print axioms norm_signed_badPieceLp_sq_le_mass
-#print axioms norm_signed_badPieceLp_sq_le
 
 end KrauseLaceyBadScale
 end QuadraticCarleson

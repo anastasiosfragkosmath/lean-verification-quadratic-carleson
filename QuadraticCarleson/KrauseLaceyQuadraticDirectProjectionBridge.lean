@@ -408,18 +408,6 @@ theorem offsetOutputScaleLp_sub_annularProjectionL2_eq_remainderOutputL2
       hk (integrable_directScaleInput S A scale f k s) hquad₂
   simpa only [w, F, hw] using hrem
 
-#print axioms integrable_directScaleInput
-#print axioms memLp_two_directScaleInput
-#print axioms directScaleInput_eq_zero_of_not_mem_image
-#print axioms directScaleOutput_eq_quadraticScaleOutput
-#print axioms norm_directScaleInput_le_smallestScaleInput
-#print axioms integral_unitWindow_norm_directScaleInput_le
-#print axioms centeredUnitMass_directScaleInput_le
-#print axioms integral_norm_directScaleInput_le_sum
-#print axioms sum_integral_norm_directScaleInput_le_root
-#print axioms sum_range_integral_norm_directScaleInput_residue_le_root
-#print axioms offsetOutputScaleLp_ae_eq_quadraticScaleOutput
-#print axioms offsetOutputScaleLp_sub_annularProjectionL2_eq_remainderOutputL2
 
 end
 end KrauseLaceyQuadraticDirectProjectionBridge

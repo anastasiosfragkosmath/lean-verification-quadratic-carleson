@@ -190,14 +190,6 @@ theorem direct_threshold_closure_of_boxed_lowL2
   exact directQuadratic_pairing_threshold_closure_at_scale P (L ∪ E) L E
     n hC hV hsubadd hlow hhigh
 
-#print axioms offsetLocalizedActionOn_union
-#print axioms offsetTailMaximalOn_union_le
-#print axioms lintegral_offsetTailMaximalOn_union_le
-#print axioms directRegular_disjoint_exceptional
-#print axioms lintegral_offsetTailMaximalOn_directRegular_exceptional_le
-#print axioms lintegral_offsetTailMaximalOn_exceptional_le_mass_average
-#print axioms directMaximalExceptional_length_le_directQuadratic_threshold
-#print axioms direct_threshold_closure_of_boxed_lowL2
 
 end
 end KrauseLaceyQuadraticDirectThresholdClosure

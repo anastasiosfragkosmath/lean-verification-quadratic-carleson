@@ -68,8 +68,6 @@ theorem finiteRadiusQuadraticHilbertBlockFamily_cardinality
     (B : ℕ) (τ : ℤ) : (Q B τ).card = B :=
   card_Q B τ
 
-#print axioms finiteRadiusQuadraticHilbertBlockFamily_sparseHypothesis
-#print axioms finiteRadiusQuadraticHilbertBlockFamily_cardinality
 
 end
 end KrauseLaceyBlockHypothesis

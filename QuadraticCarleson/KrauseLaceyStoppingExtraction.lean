@@ -262,14 +262,6 @@ theorem sum_eq_good_add_sum_children
     ∑ J ∈ S.filter P, F J
   rw [add_comm, Finset.sum_filter_add_sum_filter_not]
 
-#print axioms badDescendant_subset_stoppingChild
-#print axioms stoppingChildren_pairwiseDisjoint
-#print axioms goodCollection_averages_le
-#print axioms stoppingChildren_length_le_fifth
-#print axioms stoppingMajorSubset_measure_ge_four_fifths
-#print axioms root_insert_stoppingChildren_isSparse
-#print axioms childCollections_pairwiseDisjoint
-#print axioms sum_eq_good_add_sum_children
 
 end KrauseLaceyStoppingExtraction
 end QuadraticCarleson

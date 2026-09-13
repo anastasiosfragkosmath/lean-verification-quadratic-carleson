@@ -196,11 +196,6 @@ theorem norm_pairing_finiteSmoothMax_le_dyadicMax_add_boundary
         (norm_finiteSmoothMax_le_dyadicMax_add_boundary lam s f x) (norm_nonneg _)
     _ = _ := by ring
 
-#print axioms enorm_smoothHighPass_sub_le_maximal
-#print axioms enorm_smoothHighPass_sub_dyadicRounded_le_maximal
-#print axioms enorm_finiteSmoothMax_le_dyadicMax_add_maximal
-#print axioms norm_finiteSmoothMax_le_dyadicMax_add_boundary
-#print axioms norm_pairing_finiteSmoothMax_le_dyadicMax_add_boundary
 
 end
 end QuadraticCarleson.KrauseLaceyScaleOffsetPointwise

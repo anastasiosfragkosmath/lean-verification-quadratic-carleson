@@ -65,10 +65,5 @@ theorem torusNorm_eq_iInf_abs_sub_int (x : ℝ) :
     torusNorm x = ⨅ z : ℤ, |x - z| := by
   exact (torusNorm_isLeast_integerDistances x).csInf_eq.symm
 
-#print axioms torusNorm_eq_abs_of_mem_Ico
-#print axioms torusNorm_le_abs_sub_int
-#print axioms exists_int_abs_sub_eq_torusNorm
-#print axioms torusNorm_isLeast_integerDistances
-#print axioms torusNorm_eq_iInf_abs_sub_int
 
 end QuadraticCarleson

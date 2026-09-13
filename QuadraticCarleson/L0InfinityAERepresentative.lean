@@ -60,8 +60,5 @@ theorem hasQuadraticPrincipalValue_congr_ae {f g : ℝ → ℂ}
     HasQuadraticPrincipalValue lam f x z ↔ HasQuadraticPrincipalValue lam g x z := by
   simp only [HasQuadraticPrincipalValue, quadraticHilbertTrunc_congr_ae hfg]
 
-#print axioms exists_L0Infinity_ae_eq
-#print axioms quadraticHilbertTrunc_congr_ae
-#print axioms hasQuadraticPrincipalValue_congr_ae
 
 end QuadraticCarleson.L0InfinityAERepresentative

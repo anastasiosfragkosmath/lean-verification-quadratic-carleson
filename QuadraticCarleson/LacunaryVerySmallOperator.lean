@@ -912,29 +912,6 @@ theorem lintegral_lacunaryVerySmallLowContribution_compl_le
       rw [ENNReal.tsum_mul_left]
     _ = _ := by rw [hm]
 
-#print axioms sqrt_dyadicModulation
-#print axioms dyadicModulation_mul_lowSupportRadius
-#print axioms paperLowCZKernel_eq_zero_of_not_mem_expanded
-#print axioms integral_paperLowCZKernel_levelAtom_eq_zero_of_not_mem_expanded
-#print axioms lintegral_enorm_paperLowCZKernel_levelAtom_compl_fivefold_le
-#print axioms atomLength_lt_lowSupportRadius_of_mem_L
-#print axioms verySmallCancellationCoefficient_le
-#print axioms lintegral_enorm_paperLowCZKernel_levelAtom_verySmall_le
-#print axioms tsum_lintegral_enorm_paperLowCZKernel_levelAtom_verySmall_le
-#print axioms tsum_canonicalScaleCells_verySmall_le
-#print axioms canonicalScaleVerySmallOutputMass_le
-#print axioms restrictedCanonicalVerySmallOutputMass_le
-#print axioms tsum_tsum_restrictedCanonicalVerySmallOutputMass_le
-#print axioms tsum_canonicalScaleAtomL1Mass_le
-#print axioms tsum_tsum_restrictedCanonicalVerySmallOutputMass_le_levelMass
-#print axioms stoppingScaleLevelBadPart_eq_scaleDisjointLevelAtomSum
-#print axioms integral_paperLowCZKernel_stoppingScaleLevelBadPart_eq_tsum_cells
-#print axioms canonicalScaleLowActionMass_le_outputMass
-#print axioms restrictedCanonicalScaleLowActionMass_le_outputMass
-#print axioms tsum_tsum_restrictedCanonicalScaleLowActionMass_le_levelMass
-#print axioms measurable_canonicalScaleLowActionEnorm
-#print axioms lintegral_verySmallLowContributionAtLevel_compl_le
-#print axioms lintegral_lacunaryVerySmallLowContribution_compl_le
 
 end LacunaryVerySmallOperator
 end QuadraticCarleson

@@ -216,12 +216,6 @@ theorem sum_abs_inner_badPieceLp_le_decay
   intro J hJ
   exact abs_inner_localizedPieceLp_le_crossPairing _ _ _ _ _ _ _ _
 
-#print axioms carrier_subset_or_disjoint_of_scale_lt
-#print axioms sum_nonstandard_crossPairing_le
-#print axioms sum_nonstandard_crossPairing_le_decay
-#print axioms inner_localizedPieceLp_eq_re_crossPairing
-#print axioms inner_badPieceLp_eq_zero_of_scale_eq
-#print axioms sum_abs_inner_badPieceLp_le_decay
 
 end KrauseLaceyBadScale
 end QuadraticCarleson

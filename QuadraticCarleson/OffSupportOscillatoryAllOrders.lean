@@ -52,8 +52,5 @@ theorem offSupportOscillatoryAction_rapid_decay (k : ℕ) :
   ⟨offSupportDecayConstant k 0 1, offSupportDecayConstant_nonneg k 0 1,
     fun _ _ _ _ hlam ht hx ↦ offSupportOscillatoryAction_norm_le_all_orders k hlam ht hx⟩
 
-#print axioms offSupportWeightedAction_norm_le_all_orders
-#print axioms offSupportOscillatoryAction_norm_le_all_orders
-#print axioms offSupportOscillatoryAction_rapid_decay
 
 end QuadraticCarleson

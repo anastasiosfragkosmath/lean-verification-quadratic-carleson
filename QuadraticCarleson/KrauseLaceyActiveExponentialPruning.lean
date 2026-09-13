@@ -142,9 +142,6 @@ theorem eLpNorm_exponentiallyPruned_badLengthTailMaximal_le
     exact_mod_cast log2_activeExponentialCutoff_le s
   nlinarith [Real.sqrt_nonneg (nonstandardSignedEnergyBudget f I₀ s)]
 
-#print axioms volume_active_exponentialCutoff_le
-#print axioms ofReal_sum_active_removed_length_le
-#print axioms eLpNorm_exponentiallyPruned_badLengthTailMaximal_le
 
 end KrauseLaceyBadScale
 end QuadraticCarleson

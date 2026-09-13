@@ -98,6 +98,5 @@ theorem hasExtendedWeakL1Bound_of_finiteMax_add_fortyEight_maximal
         ENNReal.ofReal_ofNat, ENNReal.ofReal_ofNat]
       ring
 
-#print axioms hasExtendedWeakL1Bound_of_finiteMax_add_fortyEight_maximal
 
 end QuadraticCarleson.FiniteSparseCommonErrorWeak

@@ -310,13 +310,6 @@ theorem lintegral_energyNonstandard_pairing_le_threshold
       (eLpNorm_interpolationLow_le_rpow g ha (by linarith) hp2 hg)) _
 
 
-#print axioms lintegral_badLengthTail_pairing_le_sum_local_averages_of_scale
-#print axioms lintegral_badLengthTail_pairing_le_of_averages_le
-#print axioms energyNonstandardSourceTailMaximal_eq_badLengthTailMaximal
-#print axioms lintegral_energyNonstandard_pairing_le_sum_local_averages
-#print axioms lintegral_energyNonstandard_pairing_le_of_averages_le
-#print axioms lintegral_energyNonstandard_good_pairing_le
-#print axioms lintegral_energyNonstandard_pairing_le_threshold
 
 end KrauseLaceyScalarNear
 end QuadraticCarleson

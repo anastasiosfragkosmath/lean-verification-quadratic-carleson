@@ -401,18 +401,6 @@ theorem sum_integral_norm_offsetGroupedInput_le_sum_region_mass
   intro I hI
   exact integral_norm_offsetGroupedInput_le_sum_region_mass S scale f I s
 
-#print axioms integrable_offsetGroupedInput
-#print axioms enorm_offsetLocalizedActionOn_le_sum_enorm_piece
-#print axioms offsetTailMaximalOn_le_sum_enorm_piece
-#print axioms norm_offsetLocalizedPiece_le_mass_of_scale
-#print axioms offsetTailMaximalOn_le_massMajorant_of_scale
-#print axioms lintegral_offsetTailMaximalOn_pairing_le_sum_local_averages
-#print axioms lintegral_offsetTailMaximalOn_mul_le_lintegral_sum_piece
-#print axioms lintegral_sum_enorm_piece_mul
-#print axioms lintegral_offsetTailMaximalOn_mul_le_mass_average_sum
-#print axioms integral_norm_offsetGroupedInput_le_carrier
-#print axioms integral_norm_offsetGroupedInput_le_sum_region_mass
-#print axioms sum_integral_norm_offsetGroupedInput_le_sum_region_mass
 
 end
 end KrauseLaceyQuadraticDirectPositivePairing

@@ -104,8 +104,6 @@ theorem norm_lengthTail_le_two_generationPrefixNormMax
   rw [Finset.sum_congr rfl hpiece, Finset.sum_sub_distrib, hfull, hprefix]
   exact (norm_sub_le _ _).trans (by linarith [hbound N.card le_rfl, hbound n hn])
 
-#print axioms exists_generation_cutoff_for_length
-#print axioms norm_lengthTail_le_two_generationPrefixNormMax
 
 end KrauseLaceyGenerationLayers
 end QuadraticCarleson

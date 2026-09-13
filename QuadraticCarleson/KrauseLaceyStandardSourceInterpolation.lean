@@ -229,13 +229,6 @@ theorem eLpNorm_energyStandardFixedPhysicalSourceAction_le_j_mul
       hf I₀ k₀ j hk₀ hk₀j scale hlam hsub N hN hfixed hq)
     (one_div_nonneg.mpr hq0.le)
 
-#print axioms lintegral_enorm_rpow_le_linf_mul_sq
-#print axioms energyStandardFixedPhysicalSourceAction_sq_lintegral_le
-#print axioms energyStandardFixedPhysicalSourceAction_rpow_lintegral_le
-#print axioms eLpNorm_energyStandardFixedPhysicalSourceAction_le
-#print axioms energyStandardFixedPhysicalSourceAction_sq_lintegral_le_j_mul
-#print axioms energyStandardFixedPhysicalSourceAction_rpow_lintegral_le_j_mul
-#print axioms eLpNorm_energyStandardFixedPhysicalSourceAction_le_j_mul
 
 end KrauseLaceyBadScale
 end QuadraticCarleson

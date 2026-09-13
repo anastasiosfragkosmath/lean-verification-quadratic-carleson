@@ -155,12 +155,6 @@ theorem coe_finiteFullDyadicSuffixMaxNNNorm_one_le_canonicalLowControl_add_high
     (unitScaleSplitLength_le hj hreach) (add_unitScaleSplitLength j hj)
       hfm hfi hf2 x
 
-#print axioms add_unitScaleSplitLength
-#print axioms unitScaleSplitLength_le
-#print axioms finiteFullDyadicTail_add
-#print axioms coe_finiteFullDyadicSuffixMaxNNNorm_le_split
-#print axioms coe_finiteFullDyadicSuffixMaxNNNorm_one_le_lowControl_add_high
-#print axioms coe_finiteFullDyadicSuffixMaxNNNorm_one_le_canonicalLowControl_add_high
 
 end
 end KrauseLaceyFullDyadicScaleSplit

@@ -734,14 +734,6 @@ theorem hasSparseOnePBound_localizedTailMaximalTestOperator_of_pStopping_forest
     rw [hzero, norm_zero, ENNReal.ofReal_zero]
     exact bot_le
 
-#print axioms pStopping_good_part_pairing
-#print axioms pStopping_one_step_pairing_bound
-#print axioms sparseForm_finset_pStoppingAtom
-#print axioms pStopping_childCollection_ssubset
-#print axioms exists_pStopping_recursive_sparse_bound
-#print axioms exists_pStopping_recursive_sparse_bound_forest
-#print axioms hasSparseOnePBound_localizedTailMaximalTestOperator_of_pStopping_tree
-#print axioms hasSparseOnePBound_localizedTailMaximalTestOperator_of_pStopping_forest
 
 end
 end KrauseLaceyPStoppingPositiveClosure

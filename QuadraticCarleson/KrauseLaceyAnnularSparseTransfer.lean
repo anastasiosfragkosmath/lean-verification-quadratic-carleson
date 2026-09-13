@@ -138,12 +138,6 @@ theorem hasUnitScaleOffsetSmoothSparseBound_of_native
   have h := hasUnitFiniteSmoothSparseBound_of_native hC
   exact ⟨h.1, fun a ha s p hp hp2 ↦ h.2 (scaleRadii a ha (roundedRadii s)) p hp hp2⟩
 
-#print axioms hasSparseOnePBound_finiteSmoothMax_of_dyadic_and_boundary
-#print axioms hasSparseOnePBound_finiteSmoothMax_of_positiveSuffix_and_boundary
-#print axioms hasUniformFiniteRadiusSmoothSparseBound_of_native_and_boundary
-#print axioms hasUnitFiniteSmoothSparseBound_of_native
-#print axioms hasUnitScaleOffsetSmoothSparseBound_of_native
-#print axioms hasUniformFiniteRadiusSmoothSparseBound_of_native
 
 end
 end QuadraticCarleson.KrauseLaceyAnnularSparseTransfer

@@ -176,12 +176,6 @@ theorem lintegral_localizedTailMaximal_le_directQuadratic_geometric_local
     scale f g ell₀ I₀ hscale hsub] at hlocalized
   exact hlocalized
 
-#print axioms intervalRestrictionL0Infinity
-#print axioms integral_norm_rpow_intervalRestrictionL0Infinity
-#print axioms lintegral_ofReal_norm_rpow_intervalRestrictionL0Infinity
-#print axioms intervalL1Average_intervalRestrictionL0Infinity_eq_of_subset
-#print axioms lintegral_localizedTailMaximal_mul_intervalRestrictionL0Infinity_eq
-#print axioms lintegral_localizedTailMaximal_le_directQuadratic_geometric_local
 
 end
 end KrauseLaceyQuadraticDirectRootLocalization

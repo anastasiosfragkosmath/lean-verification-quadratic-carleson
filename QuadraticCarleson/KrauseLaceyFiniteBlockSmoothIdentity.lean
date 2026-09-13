@@ -43,8 +43,6 @@ theorem paperLowDyadicOperator_eq_smoothHighPass_sub
   exact finiteQuadraticDyadicBlock_eq_smoothHighPass_sub
     lam (oscillatoryScaleIndex lam 0 hlam) B f.integrable x
 
-#print axioms finiteQuadraticDyadicBlock_eq_smoothHighPass_sub
-#print axioms paperLowDyadicOperator_eq_smoothHighPass_sub
 
 end
 end KrauseLaceyFiniteBlockSmoothIdentity

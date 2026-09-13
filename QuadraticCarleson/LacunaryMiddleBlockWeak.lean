@@ -98,8 +98,6 @@ theorem logSquaredFrozenBlockWeakBounds_of_hilbert
   rw [ENNReal.ofReal_mul (mul_nonneg hC' (sq_nonneg L)),
     ENNReal.ofReal_toReal hmass_ne]
 
-#print axioms hasExtendedWeakL1Bound_frozenBlockMaxEnorm
-#print axioms logSquaredFrozenBlockWeakBounds_of_hilbert
 
 end LacunaryMiddleBlockWeak
 end QuadraticCarleson

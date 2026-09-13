@@ -56,8 +56,5 @@ theorem offSupportPaperLemma (k : ℕ) :
   exact ⟨quadraticHilbertSchwartz_wavePacket_sub_main_le ht hx,
     fun hlam ↦ quadraticHilbertSchwartz_wavePacket_norm_le_all_orders k hlam ht hx⟩
 
-#print axioms quadraticHilbertSchwartz_wavePacket_sub_main_le
-#print axioms quadraticHilbertSchwartz_wavePacket_norm_le_all_orders
-#print axioms offSupportPaperLemma
 
 end QuadraticCarleson

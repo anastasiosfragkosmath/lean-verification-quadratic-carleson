@@ -626,20 +626,6 @@ theorem localizedTailMaximal_le_sum_offsetTailMaximal
   exact le_iSup (fun q : {q : ℤ // ell₀ ≤ q} ↦
     ‖offsetLocalizedAction S scale f q.1 s x‖ₑ) ell
 
-#print axioms localizedTailAction_activeHighCollection
-#print axioms localizedTailMaximal_activeHighCollection
-#print axioms measurable_offsetTailMaximalOn
-#print axioms offsetGroupedInput_eq_zero_of_scale_add_two_sub_neg
-#print axioms offsetLocalizedActionOn_relevantOffsetOutputs
-#print axioms offsetTailMaximalOn_relevantOffsetOutputs
-#print axioms scale_add_two_ge_cutoff_of_mem_activeHighCollection
-#print axioms scale_le_of_carrier_subset
-#print axioms offsetGroupedInput_eq_indicator_smallestScaleInput
-#print axioms sum_offsetGroupedInput_centralThird_eq
-#print axioms localizedPiece_eq_sum_offset
-#print axioms localizedTailAction_eq_sum_offsetLocalizedAction
-#print axioms localizedTailAction_eq_sum_nonnegativeOffsetLocalizedAction
-#print axioms localizedTailMaximal_le_sum_offsetTailMaximal
 
 end
 end KrauseLaceyQuadraticDirectAction

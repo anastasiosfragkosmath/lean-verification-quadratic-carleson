@@ -264,8 +264,6 @@ theorem hasSparseOnePBound_localizedTailMaximalTestOperator_of_forest
     rw [hzero, norm_zero, ENNReal.ofReal_zero]
     exact bot_le
 
-#print axioms exists_recursive_sparse_bound_forest
-#print axioms hasSparseOnePBound_localizedTailMaximalTestOperator_of_forest
 
 end
 end KrauseLaceyNativePositiveForestClosure

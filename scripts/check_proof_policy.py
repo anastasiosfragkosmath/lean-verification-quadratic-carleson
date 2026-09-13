@@ -113,11 +113,7 @@ def fallback_forbidden_source_matches(sources):
     return matches
 
 
-def validate_challenge():
-    if not CHALLENGE.is_file() or not SOLUTION.is_file() or not COMPARATOR_CONFIG.is_file():
-        raise ValueError("Comparator challenge, solution, and configuration must all be present.")
-
-    challenge = CHALLENGE.read_text(encoding="utf-8")
+def validate_challenge_source(challenge):
     placeholders = CHALLENGE_PLACEHOLDER.findall(challenge)
     if len(placeholders) != len(CHALLENGE_THEOREMS):
         raise ValueError("Challenge.lean must contain exactly one intentional placeholder per target.")
@@ -127,8 +123,23 @@ def validate_challenge():
         raise ValueError("Challenge.lean contains a forbidden declaration outside its placeholders.")
     for theorem in CHALLENGE_THEOREMS:
         name = theorem.rsplit(".", maxsplit=1)[1]
-        if not re.search(rf"^theorem {re.escape(name)}\b", challenge, re.MULTILINE):
-            raise ValueError(f"Challenge.lean is missing target theorem {theorem}.")
+        placeholder_body = re.compile(
+            rf"^theorem {re.escape(name)}\b(?:(?!^theorem\b).)*?"
+            r":=\s*by\s*\n[ \t]*sorry[ \t]*$",
+            re.MULTILINE | re.DOTALL,
+        )
+        if not placeholder_body.search(challenge):
+            raise ValueError(
+                f"Challenge.lean must use its intentional placeholder as the body of {theorem}."
+            )
+
+
+def validate_challenge():
+    if not CHALLENGE.is_file() or not SOLUTION.is_file() or not COMPARATOR_CONFIG.is_file():
+        raise ValueError("Comparator challenge, solution, and configuration must all be present.")
+
+    challenge = CHALLENGE.read_text(encoding="utf-8")
+    validate_challenge_source(challenge)
 
     solution = SOLUTION.read_text(encoding="utf-8")
     if "import QuadraticCarleson.PaperTheorems" not in solution:

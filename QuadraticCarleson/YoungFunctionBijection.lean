@@ -62,11 +62,5 @@ noncomputable def nonnegOrderIso (Φ : YoungFunction) : ℝ≥0 ≃o ℝ≥0 := 
     Φ.nonnegOrderIso.symm ⟨Φ t, Φ.nonneg t.property⟩ = t :=
   Φ.nonnegOrderIso.symm_apply_apply t
 
-#print axioms eventually_id_le
-#print axioms tendsto_atTop
-#print axioms bijOn_nonneg
-#print axioms nonnegOrderIso
-#print axioms apply_nonnegOrderIso_symm
-#print axioms nonnegOrderIso_symm_apply
 
 end QuadraticCarleson.YoungFunction

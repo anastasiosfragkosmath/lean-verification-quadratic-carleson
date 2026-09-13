@@ -262,18 +262,8 @@ theorem hasSparseOnePBound_absolute_smoothHighPass_of_uniform_positive_finiteMax
   hasSparseOnePBound_absolute_smoothHighPass_of_uniform_finiteMax lam j
     (fun N ↦ hasSparseOnePBound_fullDyadicTailMax lam j N hC (hpositive N))
 
-#print axioms hasSparseOnePBound_smoothHighPass_of_uniform_finiteMax
-#print axioms hasSparseOnePBound_absolute_smoothHighPass_of_uniform_finiteMax
-#print axioms hasSparseOnePBound_absolute_smoothHighPass_of_uniform_positive_finiteMax
 
-#print axioms exists_fullDyadicTailSup_eq_finiteMax
-#print axioms exists_operatorPairing_fullDyadicTailSup_eq_finiteMax
-#print axioms hasSparseOnePBound_fullDyadicTailSup_of_uniform_finiteMax
 
-#print axioms exists_uniform_zero_fullDyadic_integrands
-#print axioms exists_uniform_smoothHighPass_eq_finiteFullDyadicTail
-#print axioms exists_operatorPairing_smoothHighPass_eq_finiteTail
-#print axioms hasSparseOnePBound_smoothHighPass_of_uniform_finiteTail
 
 /-! The KL-oriented bridge: the lower cutoff moves and the upper cutoff
 is fixed. Prefix-maximal statements above are auxiliary only. -/
@@ -381,10 +371,5 @@ theorem hasSparseOnePBound_dyadicSmoothHighPassMax_of_uniform_positive_finiteSuf
   hasSparseOnePBound_dyadicSmoothHighPassMax_of_uniform_finiteSuffixMax lam j
     (fun N ↦ hasSparseOnePBound_fullDyadicSuffixMax lam j N hC (hpositive N))
 
-#print axioms smoothHighPass_eq_finiteSuffix_of_zero
-#print axioms dyadicSmoothHighPassMaxEnorm_lt_top
-#print axioms exists_operatorPairing_dyadicSmoothHighPassMax_eq_finiteSuffixMax
-#print axioms hasSparseOnePBound_dyadicSmoothHighPassMax_of_uniform_finiteSuffixMax
-#print axioms hasSparseOnePBound_dyadicSmoothHighPassMax_of_uniform_positive_finiteSuffixMax
 
 end QuadraticCarleson.KrauseLaceyCompactPairingStabilization

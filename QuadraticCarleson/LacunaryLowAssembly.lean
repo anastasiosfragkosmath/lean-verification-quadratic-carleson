@@ -330,14 +330,6 @@ theorem lacunaryLowActionAtLevel_eq_sum_fixedHeights
     (integrable_canonicalLevelBadPart hf hfi hAk).locallyIntegrable B
       (dyadicModulation m) (dyadicModulation_pos m).ne' x
 
-#print axioms measurable_lacunaryMiddleLowContribution
-#print axioms lacunaryMiddleLowContribution_le_frozen_add_verySmall
-#print axioms summable_canonicalScaleLowActions
-#print axioms lacunaryLowActionAtLevel_enorm_le_middle_add_verySmall
-#print axioms lacunaryLowContribution_le_frozen_add_two_verySmall
-#print axioms lacunaryLowContribution_paperCutoff_levelSet_one_le_orlicz
-#print axioms lacunaryLowContribution_paperCutoff_zero_levelSet_one_le_orlicz
-#print axioms lacunaryLowActionAtLevel_eq_sum_fixedHeights
 
 end LacunaryLowAssembly
 end QuadraticCarleson

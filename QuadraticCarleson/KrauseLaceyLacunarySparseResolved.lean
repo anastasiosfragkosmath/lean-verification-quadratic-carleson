@@ -70,9 +70,6 @@ theorem lacunary_principalValue_endpoint
   lacunary_principalValue_endpoint_of_sparse hH
     hasFiniteSparseMaximalWeakBound hKL
 
-#print axioms hasFiniteSparseMaximalWeakBound
-#print axioms hasUniformL0LogSquaredFrozenBlockWeakBounds
-#print axioms lacunary_principalValue_endpoint
 
 end
 end KrauseLaceyLacunarySparseResolved

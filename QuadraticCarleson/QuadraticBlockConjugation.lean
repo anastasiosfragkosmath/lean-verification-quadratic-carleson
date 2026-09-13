@@ -66,12 +66,6 @@ theorem enorm_paperLowDyadicOperator_neg
   simpa only [ofReal_norm] using
     congrArg ENNReal.ofReal (norm_paperLowDyadicOperator_neg lam hlam B f x)
 
-#print axioms oscillatoryScaleIndex_neg
-#print axioms lowOscillatoryKernel_neg_eq_conj
-#print axioms finiteQuadraticDyadicBlock_neg_eq_conj
-#print axioms paperLowDyadicOperator_neg_eq_conj
-#print axioms norm_paperLowDyadicOperator_neg
-#print axioms enorm_paperLowDyadicOperator_neg
 
 end
 end QuadraticCarleson.QuadraticBlockConjugation

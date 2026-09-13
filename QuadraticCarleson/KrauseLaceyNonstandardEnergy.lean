@@ -184,10 +184,6 @@ theorem sum_nonstandard_badPiece_diagonalEnergy_le
       (hN.trans (nonstandardIntervals_subset S f I₀ k₀ s scale))
       (fun I hI ↦ (Finset.mem_filter.mp (hN hI)).2.1)) hC
 
-#print axioms integral_sq_localizedPiece_eq_norm_pairing
-#print axioms integral_sq_localizedPiece_le_of_adjoint_bound
-#print axioms nonstandard_badPiece_diagonalEnergy_le
-#print axioms sum_nonstandard_badPiece_diagonalEnergy_le
 
 end KrauseLaceyBadScale
 end QuadraticCarleson

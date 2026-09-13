@@ -119,15 +119,5 @@ theorem finite_modulation_blocks_weakOneOne
         ∫⁻ x, ‖f x‖ₑ :=
   FiniteModulationDirectBlockResolved.finiteModulationBlock_weak_bound B lam hlam f hα
 
-#print axioms lacunary_sub_log2_modular_failure
-#print axioms full_sub_log2_modular_failure
-#print axioms lacunary_counterexample_at_unit_height
-#print axioms full_counterexample_at_unit_height
-#print axioms full_LlogL_endpoint
-#print axioms lacunary_log2_squared_log4_endpoint
-#print axioms lacunary_not_weakOneOne
-#print axioms full_not_weakOneOne
-#print axioms principalValueMaxima_aemeasurable
-#print axioms finite_modulation_blocks_weakOneOne
 
 end QuadraticCarleson.PaperTheorems

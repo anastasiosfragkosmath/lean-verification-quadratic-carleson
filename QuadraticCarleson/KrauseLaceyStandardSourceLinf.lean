@@ -520,17 +520,6 @@ theorem norm_energyStandardFixedPhysicalSourceAction_le_localAverage
   exact norm_energyStandardRegroupedSourceAction_le_localAverage
     hf I₀ k₀ j scale hlam hsub R N hN hfixed x
 
-#print axioms energyStandardFixedPhysicalSourceAction_reindex
-#print axioms energyStandardFixedPhysicalSourceAction_eq_regrouped
-#print axioms krauseLaceyLocalizedPiece_eq_applyIntegral_intervalBadInput
-#print axioms FiniteRangeKernel.applyIntegral_finsetSum
-#print axioms norm_krauseLaceyFixedScaleLocalizedSum_variable_le
-#print axioms norm_energyStandardSourceParentInput_le
-#print axioms integral_norm_energyStandardSourceParentInput_le
-#print axioms norm_energyStandardRegroupedSourceAction_le
-#print axioms norm_energyStandardRegroupedSourcePiece_le_localAverage
-#print axioms norm_energyStandardRegroupedSourceAction_le_localAverage
-#print axioms norm_energyStandardFixedPhysicalSourceAction_le_localAverage
 
 end KrauseLaceyBadScale
 end QuadraticCarleson

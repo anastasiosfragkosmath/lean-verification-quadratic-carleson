@@ -508,9 +508,6 @@ theorem sum_projectedOffsetResidueTailMax_sq_lintegral_le_root_mass
         hA hlam scale hscale f hs hM hmass I₀ hsub hgap r N
     _ = _ := by simp
 
-#print axioms projectedOffsetResidueTailMax_sq_lintegral_le_allScales
-#print axioms projectedOffsetResidueTailMax_sq_lintegral_le_root_mass
-#print axioms sum_projectedOffsetResidueTailMax_sq_lintegral_le_root_mass
 
 end
 end KrauseLaceyQuadraticDirectProjectedTail

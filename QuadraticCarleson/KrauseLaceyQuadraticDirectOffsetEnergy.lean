@@ -82,9 +82,6 @@ theorem localizedEnergy_offsetGroupedInput_le
       rw [Set.indicator_of_mem hx]
     _ = _ := by rw [← hoff]
 
-#print axioms krauseLaceyLocalizedPiece_indicator_centralThird
-#print axioms localizedEnergy_indicator_centralThird
-#print axioms localizedEnergy_offsetGroupedInput_le
 
 end
 end KrauseLaceyQuadraticDirectOffsetEnergy

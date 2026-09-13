@@ -323,10 +323,6 @@ theorem hasSparseOneOneBound_centered_of_finite_laminar
       norm_num
       ring
 
-#print axioms exists_three_laminar_maxima_domination
-#print axioms lintegral_centeredMaximal_pairing_eq_iSup_finite
-#print axioms localAverage_one_le
-#print axioms hasSparseOneOneBound_centered_of_finite_laminar
 
 end
 end QuadraticCarleson.HardyLittlewoodSparseReduction

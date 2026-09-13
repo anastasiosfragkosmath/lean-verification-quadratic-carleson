@@ -152,13 +152,6 @@ theorem paperLacunaryVerySmallLowContribution_levelSet_one_le
         verySmallEndpointConstant * ∫⁻ x, ‖f x‖ₑ :=
   lacunaryVerySmallLowContribution_levelSet_one_le hf hfi (fun _ ↦ by positivity) c
 
-#print axioms volume_canonicalFivefoldExceptionalSet_le
-#print axioms lacunaryVerySmallLowContribution_compl_levelSet_mul_le
-#print axioms lacunaryVerySmallLowContribution_levelSet_mul_le
-#print axioms lacunaryVerySmallLowContribution_levelSet_one_le
-#print axioms lacunaryVerySmallLowContribution_levelSet_le
-#print axioms lacunaryVerySmallLowContribution_L0Infinity_levelSet_one_le
-#print axioms paperLacunaryVerySmallLowContribution_levelSet_one_le
 
 end LacunaryVerySmallEndpoint
 end QuadraticCarleson

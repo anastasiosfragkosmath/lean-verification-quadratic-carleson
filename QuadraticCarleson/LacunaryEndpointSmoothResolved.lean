@@ -71,8 +71,5 @@ theorem lacunary_principalValue_endpoint_of_unitScaleOffset
   lacunary_principalValue_endpoint_of_smoothSparse
     (hasUniformFiniteRadiusSmoothSparseBound_of_unit_scaleOffset hA)
 
-#print axioms lacunary_principalValue_endpoint_of_smoothSparse
-#print axioms lacunary_principalValue_endpoint_of_positiveSuffix
-#print axioms lacunary_principalValue_endpoint_of_unitScaleOffset
 
 end QuadraticCarleson.LacunaryEndpointSmoothResolved

@@ -198,10 +198,5 @@ theorem integrable_krauseLaceyLocalizedPiece_crossPairing
     (Filter.Eventually.of_forall fun x ↦ by
       simpa only [RCLike.norm_conj] using hbound x)
 
-#print axioms FiniteRangeKernel.applyIntegral_comp_eq_mixed
-#print axioms FiniteRangeKernel.norm_crossPairing_le
-#print axioms krauseLaceyPositiveKernel_mixed_adjoint_le
-#print axioms krauseLaceyLocalizedPiece_crossPairing_le
-#print axioms integrable_krauseLaceyLocalizedPiece_crossPairing
 
 end QuadraticCarleson

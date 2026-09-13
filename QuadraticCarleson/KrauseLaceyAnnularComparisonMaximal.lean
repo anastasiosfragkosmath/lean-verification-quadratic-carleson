@@ -179,11 +179,6 @@ theorem enorm_finiteSmoothMax_le_dyadicMax_add_annularComparisonMax
     (smoothQuadraticHighPass lam (dyadicCeilRadius ρ.1 ρ.2) f x)).trans
       (add_le_add (enorm_adjacentRounded_le_dyadicMax lam s ρ hρ f x) herror)
 
-#print axioms enorm_finiteAnnularComparisonMax_le_maximal
-#print axioms locallyIntegrable_finiteAnnularComparisonMaxOperator
-#print axioms norm_pairing_finiteAnnularComparisonMax_le_boundary
-#print axioms hasSparseOnePBound_finiteAnnularComparisonMaxOperator
-#print axioms enorm_finiteSmoothMax_le_dyadicMax_add_annularComparisonMax
 
 end
 end QuadraticCarleson.KrauseLaceyAnnularComparisonMaximal

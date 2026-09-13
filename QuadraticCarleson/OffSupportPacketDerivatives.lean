@@ -143,8 +143,5 @@ theorem integral_abs_iteratedWavePacketDeriv (r : ℕ) (s : ℝ) {t : ℝ}
   rw [hscale, pow_succ]
   field_simp [ht.ne']
 
-#print axioms hasDerivAt_iteratedWavePacketDeriv
-#print axioms iteratedWavePacketDeriv_support
-#print axioms integral_abs_iteratedWavePacketDeriv
 
 end QuadraticCarleson

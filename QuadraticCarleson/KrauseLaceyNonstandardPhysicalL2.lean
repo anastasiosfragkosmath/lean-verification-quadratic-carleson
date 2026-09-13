@@ -143,10 +143,6 @@ theorem eLpNorm_nonstandard_badLengthTailMaximal_le
         (eLpNorm_removed_badLengthTailMaximal_le_sqrt hf I₀ k₀ s scale hlam hsub N hN)
     _ = _ := (ENNReal.ofReal_add (by positivity) (Real.sqrt_nonneg _)).symm
 
-#print axioms eLpNorm_removed_badLengthTailMaximal_le_sqrt
-#print axioms badLengthTailAction_eq_pruned_add_removed
-#print axioms badLengthTailMaximal_le_pruned_add_removed
-#print axioms eLpNorm_nonstandard_badLengthTailMaximal_le
 
 end KrauseLaceyBadScale
 end QuadraticCarleson

@@ -87,7 +87,5 @@ theorem IsSparse.iUnion_of_disjoint_carriers
     rw [hEambient (idx I) I.1 (hidx_mem I)]
     exact hEmass (idx I) ⟨I.1, hidx_mem I⟩
 
-#print axioms RealInterval.carrier_nonempty
-#print axioms IsSparse.iUnion_of_disjoint_carriers
 
 end QuadraticCarleson

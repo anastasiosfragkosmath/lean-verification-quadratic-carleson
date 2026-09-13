@@ -198,11 +198,6 @@ theorem lacunaryQuadraticCarlesonL0_levelSet_le_hilbert_remainder_add_scaled_orl
         (maximalError_levelSet_third_le_scaled_orlicz f hα))
     _ = _ := by rw [← add_mul]; rfl
 
-#print axioms lacunaryQuadraticCarlesonL0_le_oscillatory_add_hilbert_add_maximal
-#print axioms forall_lacunary_principalValue_iff_hilbert
-#print axioms scaled_centeredHardyLittlewoodMaximal_weak_bound
-#print axioms maximalError_levelSet_third_le_scaled_orlicz
-#print axioms lacunaryQuadraticCarlesonL0_levelSet_le_hilbert_remainder_add_scaled_orlicz
 
 end LacunaryPositiveOperatorReduction
 end QuadraticCarleson

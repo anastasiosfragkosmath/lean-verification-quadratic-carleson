@@ -241,11 +241,5 @@ theorem krauseLaceyCollectionAction_crossPairing_le_generation
   · intro J hJ
     exact hmass J (Finset.mem_filter.mp hJ).1
 
-#print axioms sum_intervalLength_le_of_disjoint
-#print axioms integral_localizedPiece_cross_collection
-#print axioms krauseLaceyLocalizedPiece_cross_collection_le
-#print axioms krauseLaceyLocalizedPiece_cross_collection_le_generation
-#print axioms integral_localizedPiece_cross_eq_zero_of_disjoint
-#print axioms krauseLaceyCollectionAction_crossPairing_le_generation
 
 end QuadraticCarleson

@@ -117,8 +117,6 @@ theorem exists_threeShiftForests_globalTailMaximal
         (finiteOneShiftMultiscaleFamily topScale depths E shift) f q.1 x‖ₑ)
     ell
 
-#print axioms measurable_finitePositiveGlobalTailMaximal
-#print axioms exists_threeShiftForests_globalTailMaximal
 
 end
 end KrauseLaceyThreeShiftGrid

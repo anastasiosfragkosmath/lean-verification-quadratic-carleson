@@ -342,13 +342,6 @@ theorem quadraticCarlesonL0_levelSet_le_scaled_orlicz_of_hilbertWeak
     exact norm_normalizedL0Input hα f x
   simpa only [hnorm] using h
 
-#print axioms quadraticHilbertL0Limsup_le_maximalTruncation
-#print axioms quadraticCarlesonL0_le_oscillatory_add_hilbert_add_maximal
-#print axioms quadraticCarlesonL0_levelSet_one_le_orlicz_of_hilbertWeak
-#print axioms quadraticHilbertL0Limsup_smul
-#print axioms quadraticCarlesonL0_smul
-#print axioms quadraticCarlesonL0_levelSet_eq_normalized
-#print axioms quadraticCarlesonL0_levelSet_le_scaled_orlicz_of_hilbertWeak
 
 end PositiveFullOperatorEndpoint
 end QuadraticCarleson

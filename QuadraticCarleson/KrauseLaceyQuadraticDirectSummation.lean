@@ -185,14 +185,6 @@ theorem finite_int_directQuadraticDecayRatio_sum_le_twenty_mul_holderConjugate
       simpa only [r] using
         directQuadraticDecayRatio_sum_le_twenty_mul_holderConjugate hp hp2
 
-#print axioms directQuadraticDecayRatio_le_scaleDecayRatio
-#print axioms directQuadratic_low_threshold_identity
-#print axioms directQuadratic_high_threshold_identity
-#print axioms directQuadratic_exceptional_threshold_inv
-#print axioms directQuadraticDelta_rpow_eq_decayRatio_pow
-#print axioms directQuadraticDecayRatio_sum_le_twenty_mul_holderConjugate
-#print axioms finite_directQuadraticDecayRatio_sum_le_twenty_mul_holderConjugate
-#print axioms finite_int_directQuadraticDecayRatio_sum_le_twenty_mul_holderConjugate
 
 end
 end QuadraticCarleson

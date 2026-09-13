@@ -408,18 +408,6 @@ theorem root_mem_completeFiniteShiftGridTree
   apply Finset.mem_image.2
   exact ⟨(0, q₀), root_mem_completeDescendantIndices maxDepth q₀, rfl⟩
 
-#print axioms translatedDyadicRealInterval_subset_or_disjoint_of_le
-#print axioms translatedDyadicRealInterval_laminar
-#print axioms translatedDyadicRealInterval_parent_subset
-#print axioms finiteShiftGridInterval_laminar
-#print axioms finiteShiftGridInterval_parent_subset
-#print axioms finiteShiftGridInterval_eq_centralThirdTileParent
-#print axioms finiteShiftGridTileIndex_surjective
-#print axioms finiteShiftGridTileIndex_injective
-#print axioms finiteShiftGridCentralThird_pairwiseDisjoint
-#print axioms existsUnique_mem_finiteShiftGridCentralThird
-#print axioms parent_mem_completeDescendantIndices
-#print axioms root_mem_completeFiniteShiftGridTree
 
 end
 end KrauseLaceyThreeShiftGrid

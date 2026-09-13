@@ -202,15 +202,6 @@ theorem sum_generations_eq_sum_generations_min_of_ae_overlapCount_le
   rw [generation_eq_empty_of_ae_overlapCount_le S hbound hi]
   exact Finset.sum_empty
 
-#print axioms exists_chain_of_mem_remainingIntervals
-#print axioms exists_chain_of_mem_generation
-#print axioms exists_interval_overlapCount_gt_of_mem_generation
-#print axioms remainingIntervals_eq_empty_of_ae_overlapCount_le
-#print axioms generation_eq_empty_of_ae_overlapCount_le
-#print axioms generation_eq_empty_of_overlapCount_le
-#print axioms exists_generation_lt_of_mem_of_ae_overlapCount_le
-#print axioms sum_range_eq_sum_range_min_of_eq_zero
-#print axioms sum_generations_eq_sum_generations_min_of_ae_overlapCount_le
 
 end KrauseLaceyGenerationLayers
 end QuadraticCarleson

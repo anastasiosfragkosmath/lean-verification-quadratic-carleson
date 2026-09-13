@@ -2059,17 +2059,6 @@ theorem norm_finset_sum_nonnegativeDyadicProjectionRemainderOutputL2_le
       rw [inv_two_pow_sq_eq_sqrt_sixteenth_pow]
       ring
 
-#print axioms integral_projectionKernel_mul_phase
-#print axioms norm_projectionRemainderBracket_le
-#print axioms norm_quadraticProjectionRemainder_le
-#print axioms integral_norm_quadraticProjectionRemainder_two_zpow_le
-#print axioms quadraticScaleOutputL2_sub_annularProjectionL2_eq_remainderOutputL2_of_nonneg
-#print axioms quadraticScaleOutput_sub_annularProjection_ae_of_nonneg
-#print axioms norm_quadraticProjectionRemainderOutputL2_le
-#print axioms lintegral_ofReal_finiteProjectionErrorMajorant_sq_eq
-#print axioms norm_finiteProjectionErrorMajorantL2_le_of_centeredUnitMass
-#print axioms norm_finset_sum_projectionErrors_le
-#print axioms norm_finset_sum_nonnegativeDyadicProjectionRemainderOutputL2_le
 
 end
 end QuadraticCarleson.KrauseLaceyQuadraticProjectionRemainder

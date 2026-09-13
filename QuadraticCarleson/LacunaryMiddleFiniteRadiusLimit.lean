@@ -151,9 +151,6 @@ theorem hasExtendedWeakL1Bound_frozenBlockHilbertMaxEnorm_of_finiteRadii
   exact ExtendedWeakL1Combinators.hasExtendedWeakL1Bound_iSup_of_directed
     (directed_finiteRadiusFrozenBlockHilbertMaxEnorm A f k B c τ) hfinite
 
-#print axioms directed_finiteRadiusFrozenBlockHilbertMaxEnorm
-#print axioms iSup_finiteRadiusFrozenBlockHilbertMaxEnorm_eq
-#print axioms hasExtendedWeakL1Bound_frozenBlockHilbertMaxEnorm_of_finiteRadii
 
 end
 end LacunaryMiddleFiniteRadiusLimit

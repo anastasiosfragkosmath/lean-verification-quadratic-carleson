@@ -86,9 +86,5 @@ theorem quadraticCarlesonL0_not_weakOneOne :
     identityYoungFunction_growsSlowerThanEndpoint
     (hasFunctionPhiModularEstimate_identity_of_weakOneOne hweak)
 
-#print axioms identityYoungFunction_growsSlowerThanEndpoint
-#print axioms hasFunctionPhiModularEstimate_identity_of_weakOneOne
-#print axioms lacunaryQuadraticCarlesonL0_not_weakOneOne
-#print axioms quadraticCarlesonL0_not_weakOneOne
 
 end QuadraticCarleson.NegativeWeakOneOneCorollary

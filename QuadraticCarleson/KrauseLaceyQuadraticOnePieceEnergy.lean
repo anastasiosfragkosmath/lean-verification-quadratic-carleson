@@ -112,8 +112,6 @@ theorem localizedEnergy_le_of_gap_localMass
         144 * positiveDyadicAmplitudeBound ^ 2 * (M / I.length) by ring, hratio]
       ring
 
-#print axioms localizedEnergy_le_of_localUnitMass_and_localMass
-#print axioms localizedEnergy_le_of_gap_localMass
 
 end KrauseLaceyBadScale
 end QuadraticCarleson

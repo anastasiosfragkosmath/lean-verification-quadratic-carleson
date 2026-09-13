@@ -155,13 +155,6 @@ theorem coe_finiteFullDyadicSuffixMaxNNNorm_one_le_zero_add_maximal
       (Finset.le_sup (f := fun r ↦
         ‖finiteFullDyadicSuffix 0 j N r f x‖ₑ) hm) le_rfl)
 
-#print axioms continuous_fullDyadicQuadraticKernel
-#print axioms hasCompactSupport_fullDyadicQuadraticKernel
-#print axioms finiteFullDyadicTail_eq_integral_kernelSum
-#print axioms finiteFullDyadicTail_one_sub_zero_eq_errorIntegral
-#print axioms finiteFullDyadicTail_one_enorm_le_zero_add_maximal
-#print axioms finiteFullDyadicSuffix_one_enorm_le_zero_add_maximal
-#print axioms coe_finiteFullDyadicSuffixMaxNNNorm_one_le_zero_add_maximal
 
 end
 end KrauseLaceyLowFullOddReduction

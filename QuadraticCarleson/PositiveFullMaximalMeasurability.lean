@@ -227,22 +227,6 @@ theorem aemeasurable_lacunaryPrincipalValueMaximal (f : L0Infinity) :
     (lacunaryPrincipalValueMaximal_ae_eq
       HilbertMaximalWeakResolved.hasUniformHilbertMaximalWeakBound f).symm
 
-#print axioms quadraticDifferenceKernel_norm_le_linear
-#print axioms measurable_quadraticDifferenceKernel
-#print axioms continuous_quadraticDifferenceKernel_modulation
-#print axioms quadraticDifferenceKernel_norm_le
-#print axioms integrable_quadraticDifference_row
-#print axioms continuous_quadraticDifferenceIntegral_modulation
-#print axioms quadraticHilbertTrunc_eq_zero_add_difference
-#print axioms tendsto_quadraticDifference_truncations
-#print axioms hasQuadraticPrincipalValue_zero_add_difference
-#print axioms continuous_principalValueRepresentative_modulation_of_zeroPV
-#print axioms ae_continuous_principalValueRepresentative_modulation
-#print axioms fullPrincipalValueMaximal_ae_eq_rationalSup
-#print axioms aemeasurable_principalValueRepresentative_norm
-#print axioms aemeasurable_fullPrincipalValueMaximal
-#print axioms aemeasurable_quadraticCarlesonL0
-#print axioms aemeasurable_lacunaryPrincipalValueMaximal
 
 end
 end QuadraticCarleson.PositiveFullMaximalMeasurability

@@ -50,7 +50,6 @@ theorem fourier_toLp_ae_eq {f : ℝ → ℂ} (hf : Integrable f)
       exact integral_fourier_mul_eq φ f φ.integrable hf
     _ = ∫ x, g x • 𝓕 f x := by simp [φ, Complex.real_smul]
 
-#print axioms fourier_toLp_ae_eq
 
 open HilbertPoissonFourier HilbertL2Fourier HilbertMaximalWeakOneOne
 open scoped ComplexConjugate InnerProductSpace
@@ -91,8 +90,6 @@ theorem fourier_translated_normalizedPoissonKernel {r : ℝ} (hr : 0 < r)
   have ht := fourier_comp_add_right_real (normalizedPoissonKernel r) (-x) ξ
   simpa only [sub_eq_add_neg, neg_mul, fourier_normalizedPoissonKernel hr] using ht
 
-#print axioms integral_conj_mul_eq_fourier
-#print axioms memLp_normalizedPoissonKernel
 
 /-- Poisson convolution of any `L²` representative is given pointwise by
 the absolutely convergent damped inverse Fourier integral. -/
@@ -128,7 +125,6 @@ theorem normalizedPoissonAction_eq_spectral {r : ℝ} (hr : 0 < r)
       simp [Circle.smul_def, poissonSpectralKernel, ← Complex.exp_conj, mul_assoc,
         map_ofNat]
 
-#print axioms normalizedPoissonAction_eq_spectral
 
 /-- The genuine conjugate-Poisson action equals Poisson smoothing of the
 Fourier-defined ordinary Hilbert transform, at every center and radius. -/
@@ -156,7 +152,6 @@ theorem cotlarConjugatePoissonAction_eq_poisson_hilbert
   funext y
   simp [normalizedPoissonKernel, div_eq_mul_inv, mul_comm, mul_left_comm]
 
-#print axioms cotlarConjugatePoissonAction_eq_poisson_hilbert
 
 open CalderonZygmundDyadicStopping
 
@@ -208,8 +203,5 @@ theorem quadraticHilbertMaximalTruncation_stoppingGoodPart_le_cotlar
   intro r
   exact enorm_quadraticHilbertTrunc_stoppingGoodPart_le_cotlar hf hfi r.2 x
 
-#print axioms cotlarConjugatePoissonAction_stoppingGoodPart_eq_poisson
-#print axioms enorm_quadraticHilbertTrunc_stoppingGoodPart_le_cotlar
-#print axioms quadraticHilbertMaximalTruncation_stoppingGoodPart_le_cotlar
 
 end QuadraticCarleson.HilbertRepresentativeBridge

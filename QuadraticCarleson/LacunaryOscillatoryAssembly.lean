@@ -230,13 +230,6 @@ theorem paperLacunaryOscillatoryMaximal_L0Infinity_levelSet_three_le_orlicz
   paperLacunaryOscillatoryMaximal_levelSet_three_le_orlicz f.measurable_toFun f.integrable
     (by intro k; omega) hblock
 
-#print axioms paperOscillatoryAction_stoppingBadPart_eq_tsum_lacunaryLevels
-#print axioms paperLacunaryOscillatoryMaximal_stoppingBadPart_le_low_add_high
-#print axioms stoppingBadPart_lacunaryOscillatory_levelSet_two_le_orlicz
-#print axioms paperLacunaryOscillatoryMaximal_add_le
-#print axioms paperLacunaryOscillatoryMaximal_le_good_add_bad
-#print axioms paperLacunaryOscillatoryMaximal_levelSet_three_le_orlicz
-#print axioms paperLacunaryOscillatoryMaximal_L0Infinity_levelSet_three_le_orlicz
 
 end LacunaryOscillatoryAssembly
 end QuadraticCarleson

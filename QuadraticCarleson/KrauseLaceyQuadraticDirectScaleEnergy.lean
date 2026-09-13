@@ -390,18 +390,6 @@ theorem sum_norm_offsetOutputScaleLp_sq_le_root_mass
             (sum_integral_norm_offsetGroupedInput_allScales_le_root hA hlam scale hscale
               f hs I₀ hsub) hC
 
-#print axioms offsetOutputScaleLp_ae_eq
-#print axioms outputScale_pairwiseDisjoint
-#print axioms inner_offsetLocalizedPieceLp_eq_zero_of_sameScale
-#print axioms norm_offsetOutputScaleLp_sq_eq_sum_localizedEnergy
-#print axioms norm_offsetOutputScaleLp_sq_le_sum_energy_bounds
-#print axioms sum_offsetGroupedInput_mass_region_bound
-#print axioms outputScale_centralThird_pairwiseDisjoint
-#print axioms sum_integral_norm_offsetGroupedInput_fixedScale_le
-#print axioms smallestScaleInput_eq_zero_of_not_mem_image
-#print axioms sum_integral_norm_offsetGroupedInput_allScales_le_root
-#print axioms integral_centralThird_norm_offsetGroupedInput_eq
-#print axioms sum_norm_offsetOutputScaleLp_sq_le_root_mass
 
 end
 end KrauseLaceyQuadraticDirectScaleEnergy

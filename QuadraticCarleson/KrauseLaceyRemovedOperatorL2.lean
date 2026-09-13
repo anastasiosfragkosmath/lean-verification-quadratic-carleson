@@ -139,9 +139,6 @@ theorem eLpNorm_removed_badLengthTailMaximal_sq_le
     _ ≤ _ := mul_le_mul_right (lintegral_active_removed_overlap_sq_le f I₀ k₀ s scale
       hlam N hN I₀ (fun I hI ↦ hsub I (nonstandardIntervals_subset S f I₀ k₀ s scale (hN hI)))) _
 
-#print axioms norm_localizedBadPiece_le_uniform
-#print axioms badLengthTailMaximal_le_uniform_mul_overlapCount
-#print axioms eLpNorm_removed_badLengthTailMaximal_sq_le
 
 end KrauseLaceyBadScale
 end QuadraticCarleson

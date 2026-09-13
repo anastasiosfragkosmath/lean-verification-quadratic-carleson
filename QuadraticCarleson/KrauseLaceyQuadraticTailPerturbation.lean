@@ -186,14 +186,6 @@ theorem finitePieceTailMax_sq_lintegral_le_of_piecewise_error
     (measurable_finitePieceErrorMajorant hu hvpieces)
     (fun _ ↦ le_rfl) B C hprojected herror
 
-#print axioms measurable_finitePieceErrorMajorant
-#print axioms enorm_finitePieceTail_le_finitePieceTail_add_errorMajorant
-#print axioms finitePieceTailMax_le_finitePieceTailMax_add_errorMajorant
-#print axioms finitePieceTailMax_le_finitePieceTailMax_add_sum_enorm_sub
-#print axioms finitePieceTailMax_le_finitePieceTailMax_add_of_error_majorant
-#print axioms finitePieceTailMax_sq_lintegral_le_of_error_majorant
-#print axioms finitePieceTailMax_sq_lintegral_le_of_ae_bound
-#print axioms finitePieceTailMax_sq_lintegral_le_of_piecewise_error
 
 end
 end QuadraticCarleson.KrauseLaceyQuadraticTailPerturbation

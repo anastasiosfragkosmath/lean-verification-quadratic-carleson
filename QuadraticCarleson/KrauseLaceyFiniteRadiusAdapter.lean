@@ -128,10 +128,6 @@ theorem quadraticHilbertTrunc_enorm_le_finiteRadiusTestOperator
   exact_mod_cast Finset.le_sup (s := s)
     (f := fun δ ↦ ‖quadraticHilbertTrunc lam δ.1.1 f x‖₊) hε
 
-#print axioms finiteRadiusQuadraticHilbertMaxNNNorm_add_le
-#print axioms finiteRadiusQuadraticHilbertMaxNNNorm_smul
-#print axioms finiteRadiusQuadraticHilbertMaxTestOperator_isSublinear
-#print axioms quadraticHilbertTrunc_enorm_le_finiteRadiusTestOperator
 
 end
 end KrauseLaceyFiniteRadiusAdapter

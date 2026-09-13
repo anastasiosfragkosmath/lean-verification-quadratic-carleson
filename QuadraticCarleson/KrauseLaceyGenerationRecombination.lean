@@ -80,9 +80,5 @@ theorem sum_smul_generations_range_eq
     _ = _ := by
       simp only [Finset.mem_range, Finset.sum_filter, ite_smul, zero_smul]
 
-#print axioms generationIndex_spec
-#print axioms generation_eq_filter_index
-#print axioms sum_smul_generations_eq
-#print axioms sum_smul_generations_range_eq
 
 end QuadraticCarleson.KrauseLaceyGenerationLayers

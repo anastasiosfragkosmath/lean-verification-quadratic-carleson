@@ -263,10 +263,6 @@ theorem eLpNorm_energyStandardSourceTailMaximal_le
     (energyStandardGenerationPrefixMaximal_nonneg S f I₀ k₀ s scale N x))]
   exact energyStandardSourceTailMaximal_le_prefix I₀ k₀ s scale hlam N hN x
 
-#print axioms hasSignedSumSquareBound_energyStandardGenerations
-#print axioms eLpNorm_energyStandardGenerationPrefixMaximal_le
-#print axioms eLpNorm_energyStandardSourceTailMaximal_le
-#print axioms lintegral_energyStandardSourceTail_pairing_le
 
 end KrauseLaceyBadScale
 end QuadraticCarleson

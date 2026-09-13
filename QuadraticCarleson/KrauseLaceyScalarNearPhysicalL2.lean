@@ -775,13 +775,6 @@ theorem eLpNorm_energyNonstandardSourceTailMaximal_le
   rw [intervals_eq_energyNonstandardIntervals]
   exact hN
 
-#print axioms hasSignedSumSquareBound_badSubcollectionGenerations
-#print axioms sum_activeBadIntervals_descendants_length_le
-#print axioms eLpNorm_pruned_badLengthTailMaximal_le
-#print axioms eLpNorm_removed_badLengthTailMaximal_sq_le
-#print axioms eLpNorm_nonstandard_badLengthTailMaximal_le
-#print axioms eLpNorm_nonstandardSourceTailMaximal_le
-#print axioms eLpNorm_energyNonstandardSourceTailMaximal_le
 
 end KrauseLaceyScalarNear
 end QuadraticCarleson

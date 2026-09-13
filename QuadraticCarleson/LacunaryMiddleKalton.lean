@@ -212,14 +212,6 @@ theorem lacunaryFrozenMainOutput_levelSet_one_le_logSquaredMass
   rw [paperBlockBudget_frozenBlockLogWeakConstant hf hfi B c hblock.1] at h
   simpa only [mul_assoc] using h
 
-#print axioms measurable_lacunaryFrozenMainOutput
-#print axioms lacunaryFrozenMainOutput_compl_levelSet_mul_le
-#print axioms lacunaryFrozenMainOutput_levelSet_one_le
-#print axioms ae_lacunaryFrozenMainOutput_lt_top_compl
-#print axioms individualFrozenBlockWeakBounds_of_logSquared
-#print axioms paperBlockBudget_frozenBlockLogWeakConstant
-#print axioms lacunaryFrozenMainOutput_compl_levelSet_one_le_logSquaredMass
-#print axioms lacunaryFrozenMainOutput_levelSet_one_le_logSquaredMass
 
 end LacunaryMiddleKalton
 end QuadraticCarleson

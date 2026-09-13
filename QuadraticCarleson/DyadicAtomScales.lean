@@ -9,7 +9,7 @@ import Mathlib
 /-!
 # Exact dyadic scale classes for Calderón--Zygmund atoms
 
-The author's permanent convention in `FORMALIZATION_DECISIONS.md` is
+We use the following half-open convention:
 
 `I ∈ 𝓘_j ↔ 2^j ≤ ℓ_I ∧ ℓ_I < 2^(j+1)`.
 

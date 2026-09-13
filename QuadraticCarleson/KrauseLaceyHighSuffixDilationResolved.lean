@@ -73,9 +73,6 @@ theorem hasWeakOneOneBound_dilatedHighSuffixFamily
     highFullSuffixSparseConstant
     (finiteSparseMaximalHypothesis_dilatedHighSuffixFamily B a ha)
 
-#print axioms hasSparseOnePBound_dilatedHighSuffix
-#print axioms finiteSparseMaximalHypothesis_dilatedHighSuffixFamily
-#print axioms hasWeakOneOneBound_dilatedHighSuffixFamily
 
 end
 end QuadraticCarleson.KrauseLaceyHighSuffixDilationResolved

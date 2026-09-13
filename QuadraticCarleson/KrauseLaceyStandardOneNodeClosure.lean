@@ -159,8 +159,6 @@ theorem eLpNorm_energyStandardPhysicalTailMaximal_le
       intro j hj
       exact le_trans (by omega : 0 ≤ k₀) (hP j hj)
 
-#print axioms energyStandardPhysicalTailMaximal_le_sum
-#print axioms eLpNorm_energyStandardPhysicalTailMaximal_le
 
 end
 end KrauseLaceyBadScale

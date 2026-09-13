@@ -200,12 +200,6 @@ theorem localizedEnergy_smallestScaleInput_le
             ‖smallestScaleInput S scale f (k - s) x‖ := henergy
     _ = _ := by ring
 
-#print axioms sameScale_carriers_pairwiseDisjoint
-#print axioms scale_le_of_carrier_subset
-#print axioms mem_image_selectedSubintervals_scale_le
-#print axioms integral_centralThird_norm_smallestScaleInput_le
-#print axioms localUnitMass_smallestScaleInput_le
-#print axioms localizedEnergy_smallestScaleInput_le
 
 end
 end KrauseLaceyQuadraticDirectPartition

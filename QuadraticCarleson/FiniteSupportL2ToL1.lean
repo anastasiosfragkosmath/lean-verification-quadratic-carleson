@@ -54,7 +54,5 @@ theorem integral_norm_sub_le_sqIntegral_mul_measureReal_sqrt
   filter_upwards [hfs, hgs] with x hfx hgx hx
   simp only [Pi.sub_apply, hfx hx, hgx hx, sub_zero]
 
-#print axioms integral_norm_le_sqIntegral_mul_measureReal_sqrt
-#print axioms integral_norm_sub_le_sqIntegral_mul_measureReal_sqrt
 
 end QuadraticCarleson

@@ -577,21 +577,6 @@ theorem hasUniformFiniteRadiusSmoothSparseBound_of_unit
   apply hasUniformFiniteRadiusSmoothSparseBound_of_unit_scaleOffset
   exact ⟨hA.1, fun a ha s p hp hp2 ↦ hA.2 (scaleRadii a ha (roundedRadii s)) p hp hp2⟩
 
-#print axioms isSparse_pullbackFamily
-#print axioms localAverage_dilate
-#print axioms sparseForm_pullbackFamily
-#print axioms hasSparseOnePBound_dilatedOperator
-#print axioms sparseOnePNorm_dilatedOperator
-#print axioms hasSparseOnePBound_conjugatedOperator
-#print axioms sparseOnePNorm_conjugatedOperator
-#print axioms smoothQuadraticHighPassKernel_scale
-#print axioms smoothQuadraticHighPass_normalize_nonzero
-#print axioms hasSparseOnePBound_finiteSmoothMaxOperator_nonzero_of_scaled_unit
-#print axioms hasSparseOnePBound_finiteSmoothMaxOperator_nonzero
-#print axioms hasSparseOnePBound_finiteRadiusSmoothHighPassMax_nonzero
-#print axioms locallyIntegrable_finiteSmoothMaxOperator
-#print axioms hasUniformFiniteRadiusSmoothSparseBound_of_unit_scaleOffset
-#print axioms hasUniformFiniteRadiusSmoothSparseBound_of_unit
 
 end KrauseLaceySparseDilation
 end

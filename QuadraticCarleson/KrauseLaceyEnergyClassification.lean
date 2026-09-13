@@ -563,15 +563,6 @@ theorem norm_energyStandard_fixedScale_sum_sq_le
       · exact hd
     exact inner_localizedPieceLp_eq_zero_of_disjoint _ _ _ _ _ _ _ _ (he I hI) (he J hJ) hd
 
-#print axioms localizedEnergy_le_near_add_far
-#print axioms IsNonstandard.isEnergyNonstandard
-#print axioms IsEnergyStandard.localizedEnergy_le_far
-#print axioms energyIntervals_partition
-#print axioms energyIntervals_disjoint
-#print axioms sum_energyNonstandard_badPiece_diagonalEnergy_le
-#print axioms energyStandard_badPiece_diagonalEnergy_le
-#print axioms sum_energyStandard_badPiece_diagonalEnergy_le
-#print axioms norm_energyStandard_fixedScale_sum_sq_le
 
 end KrauseLaceyBadScale
 end QuadraticCarleson

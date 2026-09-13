@@ -137,11 +137,6 @@ theorem eLpNorm_pruned_badLengthTailMaximal_le
   exact mul_le_mul_right (eLpNorm_prunedActivePrefixMaximal_le hf I₀ k₀ s hk₀ hs scale
     hlam hparent hsub N hN P.card M) _
 
-#print axioms norm_badLengthTailAction_le_prefix
-#print axioms badLengthTailMaximal_le_prefix
-#print axioms aemeasurable_badLengthTailMaximal
-#print axioms badLengthTailMaximal_eq_pruned_of_lowOverlap
-#print axioms eLpNorm_pruned_badLengthTailMaximal_le
 
 end KrauseLaceyBadScale
 end QuadraticCarleson

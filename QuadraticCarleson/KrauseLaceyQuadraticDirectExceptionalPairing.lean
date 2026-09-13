@@ -538,18 +538,6 @@ theorem lintegral_regular_offsetTailMaximalOn_interpolationHigh_le_directQuadrat
           ∫ x in I₀.carrier, ‖f x‖) := by
       rw [directQuadratic_high_threshold_identity]
 
-#print axioms smallestSelectedRegion_selectedInside_eq
-#print axioms offsetGroupedInput_selectedInside_eq
-#print axioms sum_offsetGroupedInput_mass_le_interval
-#print axioms sum_offsetGroupedInput_mass_le_interval_unfibered
-#print axioms exceptionalBelow_pairwiseDisjoint
-#print axioms biUnion_exceptionalBelow_maximal
-#print axioms sum_exceptional_offsetGroupedInput_mass_le_maximal_roots
-#print axioms sum_exceptional_offsetGroupedInput_mass_le_of_packing
-#print axioms lintegral_exceptional_offsetTailMaximalOn_le_of_packing
-#print axioms lintegral_exceptional_offsetTailMaximalOn_le_directQuadratic
-#print axioms lintegral_offsetTailMaximalOn_interpolationHigh_le
-#print axioms lintegral_regular_offsetTailMaximalOn_interpolationHigh_le_directQuadratic
 
 end
 end KrauseLaceyQuadraticDirectExceptionalPairing

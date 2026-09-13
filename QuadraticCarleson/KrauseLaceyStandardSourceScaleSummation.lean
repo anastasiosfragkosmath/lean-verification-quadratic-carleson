@@ -281,11 +281,6 @@ theorem eLpNorm_finset_sum_le_budget_mul_forty_mul_q
     _ ≤ B * ENNReal.ofReal (40 * q) := by
       gcongr
 
-#print axioms nat_sq_le_four_mul_two_pow
-#print axioms int_div_two_zpow_le_decay
-#print axioms int_ratio_rpow_le_two_mul_scaleDecayRatio_zpow
-#print axioms finite_int_ratio_rpow_sum_le_forty_mul_q
-#print axioms eLpNorm_energyStandardFixedPhysicalSourceAction_le_budget_mul_ratio
 
 end KrauseLaceyBadScale
 end QuadraticCarleson

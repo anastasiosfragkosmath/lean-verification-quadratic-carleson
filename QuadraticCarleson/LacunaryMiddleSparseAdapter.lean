@@ -174,10 +174,6 @@ theorem hasExtendedWeakL1Bound_frozenBlockHilbertMaxEnorm_restrict_of_uniform_fi
     (hasExtendedWeakL1Bound_frozenBlockHilbertMaxEnorm_of_uniform_finiteRadii
       f k B c τ hD hweak) _
 
-#print axioms finiteRadiusFrozenBlockHilbertMaxEnorm_le_finiteMax
-#print axioms hasExtendedWeakL1Bound_finiteRadiusFrozenBlock_of_hasWeakOneOneBound
-#print axioms hasExtendedWeakL1Bound_frozenBlockHilbertMaxEnorm_of_uniform_finiteRadii
-#print axioms hasExtendedWeakL1Bound_frozenBlockHilbertMaxEnorm_restrict_of_uniform_finiteRadii
 
 end
 end LacunaryMiddleSparseAdapter

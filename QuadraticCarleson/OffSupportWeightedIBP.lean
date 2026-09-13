@@ -221,8 +221,5 @@ theorem offSupportWeightedAction_norm_le_zero (r q : ℕ) {lam s t x : ℝ}
       rw [integral_const_mul, integral_abs_iteratedWavePacketDeriv r s ht, inv_pow]
       ring
 
-#print axioms offSupportWeightedAction_step
-#print axioms offSupportWeightedAction_norm_le_step
-#print axioms offSupportWeightedAction_norm_le_zero
 
 end QuadraticCarleson

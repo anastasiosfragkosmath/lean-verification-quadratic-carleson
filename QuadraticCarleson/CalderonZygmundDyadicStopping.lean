@@ -994,13 +994,6 @@ theorem integral_sq_norm_stoppingGoodPart_le_five_l1 {f : ℝ → ℂ}
           (Filter.Eventually.of_forall fun x ↦ norm_nonneg (f x))
       nlinarith [volumeReal_stoppingBadUnion_le_integral_norm hf]
 
-#print axioms stoppingCell_upper_average
-#print axioms stoppingCell_pairwiseDisjoint
-#print axioms tsum_volume_stoppingCell_le_lintegral_norm
-#print axioms ae_highPoint_mem_stoppingBadUnion
-#print axioms ae_norm_stoppingGoodPart_le_two
-#print axioms integrable_sq_norm_stoppingGoodPart
-#print axioms integral_sq_norm_stoppingGoodPart_le_five_l1
 
 end
 end CalderonZygmundDyadicStopping

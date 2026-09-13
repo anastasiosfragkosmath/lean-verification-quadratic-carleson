@@ -490,9 +490,6 @@ theorem hasSparseOnePBound_localizedTailMaximalTestOperator_of_tree
     rw [hzero, norm_zero, ENNReal.ofReal_zero]
     exact bot_le
 
-#print axioms sparseForm_finset
-#print axioms exists_recursive_sparse_bound
-#print axioms hasSparseOnePBound_localizedTailMaximalTestOperator_of_tree
 
 end
 

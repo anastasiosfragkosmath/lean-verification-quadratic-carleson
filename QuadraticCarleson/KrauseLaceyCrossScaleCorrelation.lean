@@ -203,8 +203,5 @@ theorem krauseLacey_crossScalePositiveDyadicCorrelation_le
       (by nlinarith [sq_nonneg R] : R ^ 2 ≤ r * R ^ 2)
   · exact le_rfl
 
-#print axioms krauseLacey_twoScaleCorrelation_le
-#print axioms annularQuadraticKernel_correlation_le_separated
-#print axioms krauseLacey_crossScalePositiveDyadicCorrelation_le
 
 end QuadraticCarleson

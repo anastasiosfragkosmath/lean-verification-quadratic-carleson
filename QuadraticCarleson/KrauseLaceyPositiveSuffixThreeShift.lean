@@ -121,9 +121,6 @@ theorem exists_threeShiftForests_finitePositiveDyadicSuffixMax
   exact (enorm_finitePositiveDyadicSuffixMaxOperator_le_globalTailMaximal j N f x).trans
     (hmax x)
 
-#print axioms finitePositiveGlobalTail_eq_positiveDyadicSuffix
-#print axioms enorm_finitePositiveDyadicSuffixMaxOperator_le_globalTailMaximal
-#print axioms exists_threeShiftForests_finitePositiveDyadicSuffixMax
 
 end KrauseLaceyPositiveSuffixThreeShift
 end QuadraticCarleson

@@ -217,8 +217,6 @@ theorem hasSparseOnePBound_reflectionDifference
   rw [heq]
   exact norm_sub_le _ _
 
-#print axioms hasSparseOnePBound_of_pairing_le_add
-#print axioms hasSparseOnePBound_reflectionDifference
 
 noncomputable def normInput (g : L0Infinity) : L0Infinity where
   toFun := fun x ↦ (‖g x‖ : ℂ)
@@ -293,7 +291,6 @@ theorem hasSparseOnePBound_of_norm_le_add_reflected
     rw [hCC, add_mul]
     exact add_le_add le_rfl (mul_le_mul' le_rfl hRS)
 
-#print axioms hasSparseOnePBound_of_norm_le_add_reflected
 
 /-- Locally integrable outputs supply the pairing-integrability premise
 against every bounded compact-support test function. -/
@@ -325,12 +322,7 @@ theorem hasSparseOnePBound_of_norm_le_add_reflected_of_locallyIntegrable
   hasSparseOnePBound_of_norm_le_add_reflected hC hT
     (fun f g ↦ integrable_pairing_of_locallyIntegrable (hTi f) g) hU
 
-#print axioms hasSparseOnePBound_of_norm_le_add_reflected_of_locallyIntegrable
 
-#print axioms isSparse_reflectedFamily
-#print axioms localAverage_reflect
-#print axioms sparseForm_reflectedFamily
-#print axioms hasSparseOnePBound_reflectedOperator
 
 end KrauseLaceySparseReflection
 end QuadraticCarleson

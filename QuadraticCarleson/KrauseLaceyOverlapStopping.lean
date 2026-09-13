@@ -174,9 +174,6 @@ theorem overlapCount_le_descendants_add_of_mem_overlapStoppingIntervals
   exact (Finset.card_le_card hsub).trans ((Finset.card_union_le _ _).trans
     (Nat.add_le_add_left (strictAncestors_card_le_of_mem_overlapStoppingIntervals hlam hI) _))
 
-#print axioms highOverlap_eq_biUnion_overlapStoppingIntervals
-#print axioms strictAncestors_card_le_of_mem_overlapStoppingIntervals
-#print axioms overlapCount_le_descendants_add_of_mem_overlapStoppingIntervals
 
 end KrauseLaceyBadScale
 end QuadraticCarleson

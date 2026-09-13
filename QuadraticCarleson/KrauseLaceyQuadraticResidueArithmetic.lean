@@ -83,10 +83,5 @@ theorem enorm_sum_filter_residueScale_ge_le_tailMax
       simp only [Finset.mem_range]
       exact Nat.lt_succ_of_le (min_le_right _ _))
 
-#print axioms firstResidueIndex_le_iff
-#print axioms range_filter_residueScale_ge
-#print axioms sum_filter_residueScale_ge_eq_Ico
-#print axioms sum_filter_residueScale_ge_eq_finitePieceTail
-#print axioms enorm_sum_filter_residueScale_ge_le_tailMax
 
 end QuadraticCarleson.KrauseLaceyQuadraticResidueArithmetic

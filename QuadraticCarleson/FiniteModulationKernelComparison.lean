@@ -9,8 +9,9 @@ import QuadraticCarleson.IntervalMaximalComparison
 /-!
 # The finite low-modulation block versus maximal truncations
 
-This is the elementary pointwise reduction at the start of the proof of
-Corollary `c:finitemodulationsweak11` in `SteinEndpointArxiv.tex`.  A
+This is the elementary pointwise reduction at the start of the proof of the
+finite-modulation weak-type corollary in the accompanying article
+([arXiv:2609.04101v1](https://arxiv.org/abs/2609.04101v1)). A
 consecutive block of the paper's smooth dyadic kernels telescopes.  Replacing
 its two smooth cutoffs by sharp cutoffs produces the difference of two
 quadratic Hilbert truncations; the two transition annuli are controlled by
@@ -526,8 +527,5 @@ theorem paperLowDyadicOperator_enorm_le_maximalTruncation_add_maximal
   exact finiteQuadraticDyadicBlock_enorm_le_maximalTruncation_add_maximal
     lam (oscillatoryScaleIndex lam 0 hlam) B f.measurable_toFun f.integrable x
 
-#print axioms finiteQuadraticDyadicBlock_eq_truncations_add_boundaries
-#print axioms finiteQuadraticDyadicBlock_enorm_le_maximalTruncation_add_maximal
-#print axioms paperLowDyadicOperator_enorm_le_maximalTruncation_add_maximal
 
 end QuadraticCarleson

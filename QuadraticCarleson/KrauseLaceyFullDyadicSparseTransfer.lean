@@ -138,13 +138,6 @@ theorem uniform_hasSparseOnePBound_fullDyadicTailMax {C p : ℝ} (hC : 0 ≤ C)
       HasSparseOnePBound (2 * C) p (finiteFullDyadicTailMaxOperator lam j N) :=
   fun lam j N ↦ hasSparseOnePBound_fullDyadicTailMax lam j N hC (hpositive lam j N)
 
-#print axioms memLp_two_L0Infinity
-#print axioms locallyIntegrable_finitePositiveDyadicTailMaxOperator
-#print axioms locallyIntegrable_finiteFullDyadicTailMaxOperator
-#print axioms norm_fullDyadicTailMax_le_positive_add_reflected
-#print axioms hasSparseOnePBound_fullDyadicTailMax
-#print axioms sparseOnePNorm_fullDyadicTailMax_le_two_mul_positive
-#print axioms uniform_hasSparseOnePBound_fullDyadicTailMax
 
 noncomputable def finitePositiveDyadicSuffixMaxOperator (lam : ℝ) (j : ℤ) (N : ℕ) :
     TestOperator := fun f x ↦ ((finitePositiveDyadicSuffixMaxNNNorm lam j N f x : ℝ) : ℂ)
@@ -201,7 +194,5 @@ theorem hasSparseOnePBound_fullDyadicSuffixMax
   · exact locallyIntegrable_finitePositiveDyadicSuffixMaxOperator lam j N
   · exact norm_fullDyadicSuffixMax_le_positive_add_reflected lam j N
 
-#print axioms locallyIntegrable_finiteFullDyadicSuffixMaxOperator
-#print axioms hasSparseOnePBound_fullDyadicSuffixMax
 
 end QuadraticCarleson.KrauseLaceyFullDyadicSparseTransfer

@@ -92,9 +92,6 @@ theorem lacunary_principalValue_endpoint_of_sparse
   lacunary_principalValue_endpoint hH
     (hasUniformL0LogSquaredFrozenBlockWeakBounds_of_sparse hmax hKL)
 
-#print axioms hasLogSquaredFrozenHilbertBlockWeakBounds_of_sparse
-#print axioms hasUniformL0LogSquaredFrozenBlockWeakBounds_of_sparse
-#print axioms lacunary_principalValue_endpoint_of_sparse
 
 end
 end KrauseLaceyLacunaryBlock

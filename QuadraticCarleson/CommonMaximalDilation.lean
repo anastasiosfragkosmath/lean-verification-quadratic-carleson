@@ -54,9 +54,6 @@ theorem lintegral_comp_div (a : ℝ) (ha : 0 < a) (F : ℝ → ℝ≥0∞) :
     abs_of_pos ha, lintegral_smul_measure] at h
   simpa only [div_eq_mul_inv, smul_eq_mul, mul_comm] using h.symm
 
-#print axioms quadraticHilbertTrunc_zero_dilate
-#print axioms quadraticHilbertMaximalTruncation_zero_dilate
-#print axioms lintegral_comp_div
 
 end
 end CommonMaximalDilation

@@ -163,7 +163,6 @@ theorem hasUniformFiniteRadiusSmoothSparseBound_of_positiveSuffix
     _ ≤ 2 * (A * holderConjugate p) := hnorm
     _ = (2 * A) * holderConjugate p := by ring
 
-#print axioms hasUniformFiniteRadiusSmoothSparseBound_of_positiveSuffix
 
 end
 end QuadraticCarleson

@@ -168,8 +168,6 @@ theorem finite_sum_le_of_nonstandardScaleWeight_holderConjugate
   exact finite_sum_le_of_nonstandardScaleWeight
     (holderConjugate_ge_two hp hp2) N u K atom hu
 
-#print axioms finite_sum_le_of_nonstandardScaleWeight
-#print axioms finite_sum_le_of_nonstandardScaleWeight_holderConjugate
 
 end
 

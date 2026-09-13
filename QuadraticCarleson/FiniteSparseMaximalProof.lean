@@ -1689,11 +1689,3 @@ theorem weak11sparseStatement_proof : weak11sparseStatement := by
   exact finiteSparseMaximal_weakOneOneNorm_le T A hT
 
 end QuadraticCarleson
-
-#print axioms QuadraticCarleson.centeredMaximal_excision
-#print axioms QuadraticCarleson.sparseForm_le_eight_lintegral_off_exceptional
-#print axioms QuadraticCarleson.centeredMaximal_capped_rpow_lintegral_le
-#print axioms QuadraticCarleson.sparseForm_foliation_leaf_le
-#print axioms QuadraticCarleson.finiteSparseMaximal_hasWeakOneOneBound
-#print axioms QuadraticCarleson.exists_finiteSparseMaximal_hasWeakOneOneBound
-#print axioms QuadraticCarleson.weak11sparseStatement_proof

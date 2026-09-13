@@ -265,15 +265,6 @@ theorem exists_threeShiftForests_globalTail_all_thresholds
     exact sum_localizedTailAction_eq_finite_globalTail
       f topScale ell depths E (fun depth hdepth ↦ (hE depth).2.2) x
 
-#print axioms finiteOneShiftFamily_disjoint_of_ne_depth
-#print axioms finiteOneShiftFamily_disjoint_of_ne_shift
-#print axioms sum_finiteOneShiftMultiscaleFamily
-#print axioms localizedTailAction_finiteOneShiftMultiscaleFamily
-#print axioms sum_fixedScaleLocalizedSum_finiteOneShiftFamily
-#print axioms sum_fixedScaleLocalizedSum_eq_globalConvolution
-#print axioms sum_localizedTailAction_eq_finite_globalTail
-#print axioms exists_threeShiftForests_globalTail
-#print axioms exists_threeShiftForests_globalTail_all_thresholds
 
 end
 

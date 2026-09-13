@@ -20,7 +20,6 @@ theorem sqrt_mul_threshold_rpow {a w p : ℝ}
     ring
   rw [he]
 
-#print axioms sqrt_mul_threshold_rpow
 
 theorem positive_threshold_rpow_one_sub {a w p : ℝ}
     (ha : 0 < a) (hw : 0 < w) (hp : 0 < p) :
@@ -32,12 +31,10 @@ theorem positive_threshold_rpow_one_sub {a w p : ℝ}
     ring
   rw [he]
 
-#print axioms positive_threshold_rpow_one_sub
 
 theorem reciprocal_holder_quotient (p : ℝ) :
     1 / (p / (p - 1)) = (p - 1) / p :=
   one_div_div (a := p) (b := p - 1)
 
-#print axioms reciprocal_holder_quotient
 
 end QuadraticCarleson

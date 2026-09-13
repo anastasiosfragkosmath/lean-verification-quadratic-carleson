@@ -460,14 +460,6 @@ theorem ae_summable_blockSupremum_toReal
   filter_upwards [ae_paperBlockOutput_lt_top hF hweak hbudget] with x hx
   exact ENNReal.summable_toReal hx.ne
 
-#print axioms hasExtendedWeakL1Bound_blockSupremum
-#print axioms partialCap_levelSet_mul_le_paperLog
-#print axioms hasExtendedWeakL1Bound_tsum_paperLog
-#print axioms paperBlockOutput_levelSet_one_le
-#print axioms summability_of_paperBlockBudget_ne_top
-#print axioms paperBlockOutput_levelSet_mul_le_budget
-#print axioms realBlockOutput_levelSet_one_le_budget
-#print axioms ae_summable_blockSupremum_toReal
 
 end KaltonPaperApplication
 end QuadraticCarleson

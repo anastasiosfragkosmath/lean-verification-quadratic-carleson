@@ -351,14 +351,6 @@ theorem energyStandardPhysicalTailAction_eq_sourceLevels
   intro j hj
   exact energyStandardPhysicalLayerAction_eq_sourceLevels S f I₀ k₀ scale j x
 
-#print axioms sum_energyStandardPhysicalLayer_eq
-#print axioms sum_energyStandardPhysicalLayer_tail_eq
-#print axioms badLengthTailAction_energyStandardIntervals_eq_physicalLayers
-#print axioms eLpNorm_energyStandardPhysicalLayerAction_le
-#print axioms sum_standardSourceGaps_eq_sum_sourceLevels
-#print axioms energyStandardPhysicalLayerAction_eq_sourceLevels
-#print axioms sum_badLengthTailAction_energyStandardIntervals_eq_physicalTail
-#print axioms energyStandardPhysicalTailAction_eq_sourceLevels
 
 end KrauseLaceyBadScale
 end QuadraticCarleson

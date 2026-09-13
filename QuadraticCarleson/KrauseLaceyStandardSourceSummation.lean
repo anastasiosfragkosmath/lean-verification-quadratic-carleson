@@ -334,13 +334,6 @@ theorem norm_energyStandardFixedPhysicalSourceLp_sq_le_j_mul
       (div_nonneg (by positivity [intervalL1Average_nonneg f I₀]) (by positivity))
       (integral_nonneg fun _ ↦ norm_nonneg _))
 
-#print axioms sum_norm_intervalBadInput_over_gaps_le
-#print axioms sum_intervalBadInput_mass_over_gaps_le
-#print axioms sum_energyStandard_fixedPhysical_diagonalEnergy_over_gaps_le
-#print axioms norm_energyStandard_fixedPhysical_layer_sq_eq
-#print axioms norm_energyStandardFixedPhysicalSourceLp_sq_le
-#print axioms norm_energyStandardFixedPhysicalSourceLp_sq_le_j_mul
-#print axioms energyStandardFixedPhysicalSourceLp_ae_eq
 
 end KrauseLaceyBadScale
 end QuadraticCarleson

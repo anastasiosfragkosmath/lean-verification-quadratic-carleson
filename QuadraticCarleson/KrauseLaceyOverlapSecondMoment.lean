@@ -122,9 +122,6 @@ theorem lintegral_active_removed_overlap_sq_le
         hlam N hN K hsub) _
     _ = _ := by rw [pow_two]; simp only [mul_assoc]
 
-#print axioms overlapCount_sq_le_two_sum_descendant_counts
-#print axioms lintegral_overlapCount_sq_le
-#print axioms lintegral_active_removed_overlap_sq_le
 
 end KrauseLaceyBadScale
 end QuadraticCarleson

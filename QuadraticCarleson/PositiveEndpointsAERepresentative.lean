@@ -75,7 +75,5 @@ theorem lacunary_principalValue_endpoint_aemeasurable :
       rw [hx]
     simpa only [lacunaryPrincipalValueMaximal, ofReal_norm, hmass] using h
 
-#print axioms full_principalValue_endpoint_aemeasurable
-#print axioms lacunary_principalValue_endpoint_aemeasurable
 
 end QuadraticCarleson.PositiveEndpointsAERepresentative

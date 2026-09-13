@@ -112,13 +112,6 @@ theorem full_exists_paper_modular_witness
   rw [hlevel]
   simpa only [functionOperatorLevelSet, ENNReal.ofReal_one] using hf
 
-#print axioms hasFunctionPhiModularEstimate_congr_ae
-#print axioms lacunaryPrincipalValueMaximal_ae_eq
-#print axioms fullPrincipalValueMaximal_ae_eq
-#print axioms lacunary_not_hasPhiModularEstimate
-#print axioms full_not_hasPhiModularEstimate
-#print axioms lacunary_exists_paper_modular_witness
-#print axioms full_exists_paper_modular_witness
 
 end NegativePrincipalValueEndpoints
 end QuadraticCarleson

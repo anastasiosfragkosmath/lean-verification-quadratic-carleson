@@ -1,7 +1,9 @@
 name = "quadratic_carleson"
 version = "0.1.0"
 keywords = ["math"]
-defaultTargets = ["QuadraticCarleson", "Challenge", "Solution"]
+# The normal build checks the completed formalization.  The separate
+# Challenge/Solution libraries are built only by the manual Comparator workflow.
+defaultTargets = ["QuadraticCarleson"]
 
 [leanOptions]
 pp.unicode.fun = true # pretty-prints `fun a ↦ b`
@@ -16,6 +18,8 @@ rev = "v4.34.0-rc2"
 
 [[lean_lib]]
 name = "QuadraticCarleson"
+# Compile the root module and every formalization submodule in regular CI.
+globs = ["QuadraticCarleson.*"]
 
 [[lean_lib]]
 name = "Challenge"

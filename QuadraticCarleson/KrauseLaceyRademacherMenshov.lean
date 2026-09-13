@@ -353,18 +353,6 @@ theorem eLpNorm_finitePrefixMaximal_le_log2
 
 end L2
 
-#print axioms exists_signs_sum_norm_sq_le
-#print axioms sum_norm_sq_blocks_le_signedBound
-#print axioms coarsePrefix_sdiff_eq
-#print axioms prefixSum_eq_sum_differences
-#print axioms norm_sq_prefix_le_dyadicEnergy
-#print axioms aemeasurable_finitePrefixMaximal
-#print axioms integrable_finitePrefixMaximal_sq
-#print axioms integral_finitePrefixMaximal_sq_le
-#print axioms integral_finitePrefixMaximal_sq_le_log2
-#print axioms memLp_finitePrefixMaximal
-#print axioms eLpNorm_finitePrefixMaximal_sq_le_log2
-#print axioms eLpNorm_finitePrefixMaximal_le_log2
 
 end KrauseLaceyRademacherMenshov
 end QuadraticCarleson

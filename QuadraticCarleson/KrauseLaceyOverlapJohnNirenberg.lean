@@ -140,8 +140,6 @@ theorem volume_overlap_blocks_le_half_pow
       rw [ENNReal.ofReal_div_of_pos (by norm_num)]; norm_num)
   exact mul_le_mul_left (pow_le_pow_left' hratio t) _
 
-#print axioms volume_overlap_blocks_le
-#print axioms volume_overlap_blocks_le_half_pow
 
 end KrauseLaceyBadScale
 end QuadraticCarleson

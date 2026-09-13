@@ -146,12 +146,6 @@ theorem completeFiniteShiftGridTree_nonstandardPrefix_eLpNorm_le
     (completeFiniteShiftGridTree_hasDyadicParents topScale shift maxDepth q₀)
     (completeFiniteShiftGridTree_subset_root topScale shift maxDepth q₀)
 
-#print axioms hasSignedSumSquareBound_nonstandardGenerations
-#print axioms nonstandardGenerationPrefixMaximal_ae_eq
-#print axioms memLp_nonstandardGenerationPrefixMaximal
-#print axioms integral_nonstandardGenerationPrefixMaximal_sq_le
-#print axioms eLpNorm_nonstandardGenerationPrefixMaximal_le
-#print axioms completeFiniteShiftGridTree_nonstandardPrefix_eLpNorm_le
 
 end KrauseLaceyBadScale
 end QuadraticCarleson

@@ -218,11 +218,6 @@ theorem exists_sparse_domination_finiteLaminarMaximal
     _ = _ := by
       rw [lintegral_sparseAveragingFunction_mul_enorm R f g g.integrable_finiteSparseProof]
 
-#print axioms exists_principal_family
-#print axioms isSparse_of_averageSeparated
-#print axioms exists_sparse_pointwise_domination
-#print axioms lintegral_sparseAveragingFunction_mul_enorm
-#print axioms exists_sparse_domination_finiteLaminarMaximal
 
 end
 end QuadraticCarleson.FiniteLaminarMaximalSparse

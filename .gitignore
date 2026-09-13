@@ -10,6 +10,23 @@
 .idea/
 .direnv/
 
+# Local environment files, credentials, and editor recovery files.
+.env
+.env.*
+!.env.example
+!.env.template
+*.pem
+*.key
+*.p12
+*.pfx
+*~
+*.swp
+*.swo
+*.swn
+*.tmp
+*.orig
+*.rej
+
 # Local working material; do not commit it to the public repository.
 /tmp/
 /LeanBackup_*/

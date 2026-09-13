@@ -212,13 +212,6 @@ theorem lintegral_nonstandard_pairing_interpolationHigh_le_directQuadratic
     _ = _ := by
       rw [directQuadratic_high_threshold_identity]
 
-#print axioms lintegral_pairing_interpolationLow_le
-#print axioms lintegral_pairing_interpolationLow_ennreal_le
-#print axioms sqrt_mul_rpow_mul_sqrt
-#print axioms lintegral_pairing_interpolationLow_le_normalized
-#print axioms lintegral_nonstandard_pairing_interpolationHigh_le
-#print axioms lintegral_pairing_interpolationLow_le_directQuadratic
-#print axioms lintegral_nonstandard_pairing_interpolationHigh_le_directQuadratic
 
 end KrauseLaceyBadScale
 end QuadraticCarleson

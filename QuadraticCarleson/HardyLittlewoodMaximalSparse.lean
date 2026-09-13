@@ -35,7 +35,5 @@ theorem hasSparseOnePBound_centeredHardyLittlewoodBoundaryOperator
     HasSparseOnePBound 480 p centeredHardyLittlewoodBoundaryOperator :=
   hasSparseOnePBound_of_one hp hasSparseOneOneBound_centeredHardyLittlewoodBoundaryOperator
 
-#print axioms hasSparseOneOneBound_centeredHardyLittlewoodBoundaryOperator
-#print axioms hasSparseOnePBound_centeredHardyLittlewoodBoundaryOperator
 
 end QuadraticCarleson.HardyLittlewoodMaximalSparse

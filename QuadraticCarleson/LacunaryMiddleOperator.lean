@@ -449,19 +449,6 @@ theorem tsum_sparseFrozenBlockInputL1Mass_le_levelMass
     _ ≤ 2 * PositiveLevelIntegration.magnitudeLevelL1Mass volume A f k :=
       lintegral_enorm_canonicalLevelBadPart_le hf hAk
 
-#print axioms middleRangeInput_eq_frozenBlockInput_add_error
-#print axioms measurable_frozenBlockLowAction
-#print axioms measurable_frozenBlockMaxEnorm
-#print axioms measurable_frozenBlockHilbertMaxEnorm
-#print axioms frozenBlockLowAction_enorm_le_max
-#print axioms frozenBlockLowAction_enorm_le_hilbertMax_add_maximal
-#print axioms frozenBlockMaxEnorm_le_hilbertMax_add_maximal
-#print axioms middleRangeLowAction_eq_frozenBlockLowAction_add_error
-#print axioms canonicalScaleLowAction_eq_zero_of_tooLarge
-#print axioms frozenBlockErrorLowAction_eq_neg_sum
-#print axioms enorm_frozenBlockErrorLowAction_le_verySmall
-#print axioms frozenBlockInputL1Mass_le_scale_sum
-#print axioms tsum_sparseFrozenBlockInputL1Mass_le_levelMass
 
 end
 end LacunaryMiddleOperator

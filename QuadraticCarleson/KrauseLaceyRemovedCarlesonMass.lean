@@ -78,9 +78,6 @@ theorem ofReal_sum_removed_length_blocks_le
     hlam hpack).trans (mul_le_mul_right
       (volume_overlap_blocks_le_half_pow t A K M Λ hblock hlam hsub hpack) _)
 
-#print axioms sum_removed_length_le_carleson_mul_stoppingLength
-#print axioms ofReal_sum_removed_length_le_carleson_mul_highOverlap
-#print axioms ofReal_sum_removed_length_blocks_le
 
 end KrauseLaceyBadScale
 end QuadraticCarleson

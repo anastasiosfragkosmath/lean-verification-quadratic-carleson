@@ -813,15 +813,6 @@ theorem finiteRadiusSharpMax_enorm_le_smoothHighPassMax_add_maximal
       · exact le_rfl
     _ = _ := rfl
 
-#print axioms dyadicCeilRadius_le_two_mul
-#print axioms smoothQuadraticHighPassKernel_two_pow_eq_tsum
-#print axioms hasSum_dyadicQuadraticConvolutions_add_nat
-#print axioms exists_threeShift_localizedTailActions_eq_positivePartialSum
-#print axioms radiusRoundingBoundaryOperator_enorm_le_maximal
-#print axioms quadraticHilbertTrunc_enorm_le_dyadicSmoothHighPass_add_maximal
-#print axioms finiteRadiusSmoothHighPassMaxTestOperator_isSublinear
-#print axioms finiteRadiusQuadraticHilbertMaxTestOperator_locallyIntegrable
-#print axioms finiteRadiusSharpMax_enorm_le_smoothHighPassMax_add_maximal
 
 end
 end KrauseLaceySharpSmoothAdapter

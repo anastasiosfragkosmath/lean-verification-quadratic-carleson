@@ -169,9 +169,6 @@ theorem lintegral_nonstandard_good_pairing_le
     (fun I hI ↦ (goodCollection_averages_le hsub (Finset.mem_inter.mp hI).2).2)
   convert h using 1 <;> congr 1 <;> ring
 
-#print axioms lintegral_nonstandard_pairing_le_sum_local_averages
-#print axioms lintegral_nonstandard_pairing_le_of_averages_le
-#print axioms lintegral_nonstandard_good_pairing_le
 
 end KrauseLaceyBadScale
 end QuadraticCarleson

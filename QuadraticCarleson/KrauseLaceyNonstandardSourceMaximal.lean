@@ -86,8 +86,6 @@ theorem eLpNorm_nonstandardSourceTailMaximal_le
   rw [he]
   exact eLpNorm_nonstandard_badLengthTailMaximal_le hf I₀ k₀ s hk₀ scale hlam hparent hsub N hN
 
-#print axioms nonstandardSourceTailMaximal_eq_badLengthTailMaximal
-#print axioms eLpNorm_nonstandardSourceTailMaximal_le
 
 end KrauseLaceyBadScale
 end QuadraticCarleson

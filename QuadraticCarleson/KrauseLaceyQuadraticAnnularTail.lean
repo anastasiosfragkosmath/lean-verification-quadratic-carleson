@@ -516,15 +516,6 @@ theorem finitePieceTailMax_sq_lintegral_le_sum_ae
       finitePieceTailMax_sq_lintegral_le_ae hmeas hprefix
     _ = _ := by rw [finitePieceTotal_sq_lintegral_eq_sum hu hsep]
 
-#print axioms finitePieceTailMax_le_total_add_maximal
-#print axioms aemeasurable_finitePieceTailMax
-#print axioms finitePieceTailMax_sq_lintegral_le
-#print axioms finitePieceTailMax_sq_lintegral_le_ae
-#print axioms inner_eq_zero_of_separatedFourierSupport
-#print axioms norm_sum_sq_eq_sum_norm_sq_of_separatedFourierSupport
-#print axioms enorm_convolution_le_maximal_of_supported_kernel
-#print axioms finitePieceTailMax_sq_lintegral_le_sum
-#print axioms finitePieceTailMax_sq_lintegral_le_sum_ae
 
 end
 end QuadraticCarleson.KrauseLaceyQuadraticAnnularTail

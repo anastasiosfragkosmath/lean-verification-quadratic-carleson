@@ -170,10 +170,6 @@ theorem finite_localized_p_stopping_step
   · exact localizedTailMaximal_pairing_le_monitorGood_add_children
       ell₀ scale hf g.measurable_toFun I₀ hlam
 
-#print axioms goodCollection_pMass_le
-#print axioms intervalL1Average_pStoppingMonitor_eq_localAverage_rpow
-#print axioms localizedTailMaximal_pairing_le_monitorGood_add_children
-#print axioms finite_localized_p_stopping_step
 
 end KrauseLaceyPStoppingRecursion
 end QuadraticCarleson

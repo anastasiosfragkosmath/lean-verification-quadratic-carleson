@@ -342,17 +342,6 @@ theorem completeFiniteShiftGridTree_stopping_step
     (completeFiniteShiftGridTree_length_eq_scale topScale shift maxDepth q₀)
     (completeFiniteShiftGridTree_laminar topScale shift maxDepth q₀)
 
-#print axioms finiteShiftGridInterval_subset_root
-#print axioms finiteShiftGridInterval_injective
-#print axioms finiteShiftGridInterval_global_injective
-#print axioms finiteShiftGridInterval_length_eq_scale
-#print axioms completeFiniteShiftGridTree_subset_root
-#print axioms finiteShiftGridInterval_mem_completeAncestorTree_of_le
-#print axioms finiteShiftGridInterval_mem_completeAncestorTree
-#print axioms completeFiniteShiftGridTree_laminar
-#print axioms completeFiniteShiftGridTree_length_eq_scale
-#print axioms completeFiniteShiftGridTree_hasDyadicParents
-#print axioms completeFiniteShiftGridTree_stopping_step
 
 end
 

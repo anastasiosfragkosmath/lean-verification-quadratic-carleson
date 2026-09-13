@@ -242,17 +242,6 @@ theorem lacunary_principalValue_endpoint
     exact fun m ↦ hx (dyadicModulation m)
   · exact fun _ hα ↦ lacunaryPrincipalValueMaximal_levelSet_le hH hB f hα
 
-#print axioms uniformHilbertMaximalWeakBound_of_all_integrable
-#print axioms quadraticCarlesonL0_levelSet_le_full_modular
-#print axioms zeroHilbert_levelSet_sixth_le_lacunary_modular
-#print axioms lacunaryQuadraticCarlesonL0_levelSet_le_lacunary_modular
-#print axioms ae_forall_hasPrincipalValue_representative
-#print axioms fullPrincipalValueMaximal_ae_eq
-#print axioms lacunaryPrincipalValueMaximal_ae_eq
-#print axioms fullPrincipalValueMaximal_levelSet_le
-#print axioms lacunaryPrincipalValueMaximal_levelSet_le
-#print axioms full_principalValue_endpoint
-#print axioms lacunary_principalValue_endpoint
 
 end PositivePrincipalValueEndpoints
 end QuadraticCarleson

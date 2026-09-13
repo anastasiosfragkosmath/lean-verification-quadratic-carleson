@@ -196,15 +196,6 @@ theorem frozenBlockHilbertMaxEnorm_eq_wrapper
       (Q B τ).sup fun m ↦ quadraticHilbertMaximalTruncation (dyadicModulation m)
         (frozenBlockInputL0 f k B c τ) x := rfl
 
-#print axioms stoppingBadUnion_subset_Icc_of_support_subset
-#print axioms norm_frozenBlockInput_le_two_mul
-#print axioms hasCompactSupport_frozenBlockInput
-#print axioms frozenBlockInputL0
-#print axioms coe_frozenBlockInputL0
-#print axioms eLpNorm_one_frozenBlockInputL0_eq
-#print axioms ofReal_integral_norm_frozenBlockInputL0_eq
-#print axioms frozenBlockInputL1Mass_lt_top
-#print axioms frozenBlockHilbertMaxEnorm_eq_wrapper
 
 end LacunaryFrozenInputL0
 end QuadraticCarleson

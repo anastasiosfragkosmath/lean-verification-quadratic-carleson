@@ -325,11 +325,6 @@ theorem norm_signed_badPieceLp_sq_le
     (by positivity [intervalL1Average_nonneg f I₀])
 
 
-#print axioms intervals_eq_energyNonstandardIntervals
-#print axioms sum_nonstandard_crossPairing_le
-#print axioms norm_signed_badPieceLp_sq_le_of_residue
-#print axioms norm_signed_badPieceLp_sq_le_mass
-#print axioms norm_signed_badPieceLp_sq_le
 
 end KrauseLaceyScalarNear
 end QuadraticCarleson

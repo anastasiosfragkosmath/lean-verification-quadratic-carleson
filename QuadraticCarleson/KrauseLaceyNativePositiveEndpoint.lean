@@ -88,9 +88,5 @@ theorem lacunary_principalValue_endpoint_of_oneNodePStoppingGoodPart_and_low
     (hasNativeUnitPositiveSuffixSparseBound_of_oneNodePStoppingGoodPart_and_low
       hlocal hlow)
 
-#print axioms hasSparseOnePBound_localizedTail_of_oneNodeGoodPart
-#print axioms lacunary_principalValue_endpoint_of_nativePositiveSuffix
-#print axioms hasSparseOnePBound_localizedTail_of_oneNodePStoppingGoodPart
-#print axioms lacunary_principalValue_endpoint_of_oneNodePStoppingGoodPart_and_low
 
 end QuadraticCarleson.KrauseLaceyNativePositiveEndpoint

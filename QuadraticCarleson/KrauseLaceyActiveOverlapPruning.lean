@@ -165,12 +165,6 @@ theorem eLpNorm_prunedActivePrefixMaximal_le
   exact Filter.Eventually.of_forall (overlapCount_overlapPrunedFamily_le _ M
     (fun I hI J hJ hne ↦ hlam (hAS hI) (hAS hJ) hne))
 
-#print axioms overlapCount_overlapPrunedFamily_le
-#print axioms lintegral_overlapCount_cast
-#print axioms volume_highOverlap_le
-#print axioms volume_active_highOverlap_le
-#print axioms sum_weighted_localizedBadPiece_eq_pruned_of_lowOverlap
-#print axioms eLpNorm_prunedActivePrefixMaximal_le
 
 end KrauseLaceyBadScale
 end QuadraticCarleson

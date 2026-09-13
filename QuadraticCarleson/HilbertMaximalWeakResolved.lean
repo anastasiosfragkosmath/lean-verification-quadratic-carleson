@@ -133,7 +133,6 @@ theorem normalized_weak_bound {f : ℝ → ℂ} (hf : Measurable f) (hfi : Integ
         ENNReal.ofReal_mul, ENNReal.ofReal_pow, ENNReal.ofReal_ofNat, ENNReal.ofReal_one]
       ring
 
-#print axioms normalized_weak_bound
 
 /-- Unconditional weak `(1,1)` for the supremum over every positive sharp
 ordinary Hilbert truncation, on every measurable integrable input. -/
@@ -193,10 +192,6 @@ theorem ae_forall_real_exists_quadraticPrincipalValue (f : L0Infinity) :
   HilbertPrincipalValueClosure.ae_forall_real_exists_quadraticPrincipalValue
     hasUniformHilbertMaximalWeakBound f
 
-#print axioms ordinaryHilbertMaximal_weak_bound
-#print axioms hasUniformZeroHilbertMaximalWeakBound
-#print axioms hasUniformHilbertMaximalWeakBound
-#print axioms ae_forall_real_exists_quadraticPrincipalValue
 
 open PositivePrincipalValueEndpoints
 
@@ -225,10 +220,6 @@ theorem lacunary_principalValue_endpoint
   PositivePrincipalValueEndpoints.lacunary_principalValue_endpoint
     hasUniformHilbertMaximalWeakBound hB
 
-#print axioms full_principalValue_endpoint
-#print axioms lacunary_principalValue_endpoint
 
-#print axioms lintegral_sq_enorm_goodHilbert_le
-#print axioms volume_maximal_gt_one_le_sq
 
 end QuadraticCarleson.HilbertMaximalWeakResolved

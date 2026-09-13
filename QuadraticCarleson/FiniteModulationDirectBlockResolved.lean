@@ -210,13 +210,6 @@ theorem finiteModulationBlock_weak_bound
     ENNReal.ofReal_toReal f.integrable.hasFiniteIntegral.ne] at hout
   exact hout
 
-#print axioms isSublinear_conjugatedOperator
-#print axioms hasSparseOnePBound_signedHighSuffixOperator
-#print axioms finiteSparseMaximalHypothesis_signedHighSuffixFamily
-#print axioms hasWeakOneOneBound_signedHighSuffixFamily
-#print axioms enorm_paperLowDyadicOperator_le_signedHighSuffix_add_maximal
-#print axioms finitePaperBlockMaxEnorm_le_signedHighSuffix_add_maximal
-#print axioms finiteModulationBlock_weak_bound
 
 end
 end QuadraticCarleson.FiniteModulationDirectBlockResolved

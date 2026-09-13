@@ -379,12 +379,6 @@ theorem lintegral_localizedTailMaximal_le_directQuadratic_geometric
         ENNReal.ofReal (20 * holderConjugate p * V) := by
       simp only [K, B, C]
 
-#print axioms lintegral_directRegular_offsetTailMaximalOn_le_low_add_high
-#print axioms lintegral_offsetTailMaximalOn_le_oneOffset_directQuadratic
-#print axioms lintegral_localizedTailMaximal_le_sum_offsetPairings
-#print axioms lintegral_localizedTailMaximal_le_sum_oneOffset_directQuadratic
-#print axioms sum_ofReal_directQuadraticDelta_rpow_mul_le
-#print axioms lintegral_localizedTailMaximal_le_directQuadratic_geometric
 
 end
 end KrauseLaceyQuadraticDirectOneOffset

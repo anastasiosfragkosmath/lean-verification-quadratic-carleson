@@ -215,22 +215,6 @@ theorem isSublinear_finiteFullDyadicSuffixMaxOperator
     rw [finiteFullDyadicSuffixMaxNNNorm_smul]
     rfl
 
-#print axioms highFullSuffixSparseConstant_nonneg
-#print axioms hasNativeUnitHighPositiveSuffixSparseBound_directQuadratic
-#print axioms hasSparseOnePBound_highFullDyadicSuffixMax
-#print axioms sparseOnePNorm_highFullDyadicSuffixMax_le
-#print axioms absoluteValue_finiteFullDyadicSuffixMaxOperator
-#print axioms hasSparseOnePBound_highDyadicSmoothHighPassMax
-#print axioms dyadicSmoothHighPassMaxEnorm_add_le
-#print axioms dyadicSmoothHighPassMaxEnorm_smul
-#print axioms isSublinear_dyadicSmoothHighPassMaxOperator
-#print axioms fullDyadicConvolution_add
-#print axioms fullDyadicConvolution_smul
-#print axioms finiteFullDyadicSuffix_add
-#print axioms finiteFullDyadicSuffix_smul
-#print axioms finiteFullDyadicSuffixMaxNNNorm_add_le
-#print axioms finiteFullDyadicSuffixMaxNNNorm_smul
-#print axioms isSublinear_finiteFullDyadicSuffixMaxOperator
 
 end
 end QuadraticCarleson.KrauseLaceyHighFullSuffixResolved

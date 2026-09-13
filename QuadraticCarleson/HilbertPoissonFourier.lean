@@ -499,14 +499,6 @@ theorem cotlarConjugatePoissonAction_stoppingGoodPart_eq_hilbertSpectral
   cotlarConjugatePoissonAction_eq_hilbertSpectral hr
     (integrable_stoppingGoodPart_for_hilbert hf hfi) x
 
-#print axioms integrable_poissonSpectralKernel
-#print axioms integral_norm_poissonSpectralKernel
-#print axioms fourier_poissonSpectralKernel
-#print axioms fourier_normalizedPoissonKernel
-#print axioms fourierInv_conjugatePoissonSpectralKernel
-#print axioms cotlarConjugatePoissonAction_eq_shiftedSpectral
-#print axioms cotlarConjugatePoissonAction_eq_hilbertSpectral
-#print axioms cotlarConjugatePoissonAction_stoppingGoodPart_eq_hilbertSpectral
 
 end
 end HilbertPoissonFourier

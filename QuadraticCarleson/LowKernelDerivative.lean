@@ -11,7 +11,7 @@ import Mathlib.Analysis.SpecialFunctions.ExpDeriv
 /-!
 # Derivative of the low oscillatory kernel
 
-At lines 590--593 of `SteinEndpointArxiv.tex`, the low kernel
+In the accompanying article ([arXiv:2609.04101v1](https://arxiv.org/abs/2609.04101v1)), the low kernel
 `K_{λ,B}` is asserted to satisfy
 `|K'_{λ,B}(t)| ≲ min {|λ|, 2^(2B)/|t|²}`.  This file records the exact
 product/quotient-rule formula away from zero and derives its constants from

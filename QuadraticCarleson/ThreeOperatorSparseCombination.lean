@@ -85,7 +85,5 @@ theorem hasSparseOnePBound_of_pairing_le_three
       exact add_le_add (add_le_add le_rfl (mul_le_mul' le_rfl h₂₁))
         (mul_le_mul' le_rfl h₃₁)
 
-#print axioms exists_three_sparseBounds_of_pairing_le_three
-#print axioms hasSparseOnePBound_of_pairing_le_three
 
 end QuadraticCarleson

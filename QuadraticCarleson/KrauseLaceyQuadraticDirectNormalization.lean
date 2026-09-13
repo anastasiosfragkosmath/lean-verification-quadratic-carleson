@@ -104,9 +104,6 @@ theorem localizedTailMaximal_smul
           ‖localizedTailAction scale S f ell.1 x‖ₑ :=
       (ENNReal.mul_iSup _ _).symm
 
-#print axioms localizedTailMaximal_smul
-#print axioms integral_norm_rpow_smul
-#print axioms localAverage_smul
 
 end
 end KrauseLaceyQuadraticDirectNormalization

@@ -146,10 +146,6 @@ theorem sum_activeBadIntervals_descendants_length_le
   exact sum_activeBadIntervals_length_le f I₀ k₀ s scale hlam _
     ((Finset.filter_subset _ N).trans hN) K (fun I hI ↦ (Finset.mem_filter.mp hI).2)
 
-#print axioms sum_active_aboveBase_length_le
-#print axioms sum_baseScale_length_le
-#print axioms sum_activeBadIntervals_length_le
-#print axioms sum_activeBadIntervals_descendants_length_le
 
 end KrauseLaceyBadScale
 end QuadraticCarleson

@@ -389,15 +389,6 @@ theorem ordinaryHilbertTransformL2_sq
   rw [fourier_ordinaryHilbertTransformL2,
     ordinaryHilbertMultiplierL2_hilbert, map_smul]
 
-#print axioms measurable_ordinaryHilbertMultiplier
-#print axioms fourier_principalValueOneDiv_apply_eq_multiplier_halfLines
-#print axioms memLp_ordinaryHilbertMultiplier_mul_fourier
-#print axioms norm_ordinaryHilbertTransformL2_le
-#print axioms norm_ordinaryHilbertTransformL2_eq
-#print axioms ordinaryHilbertTransformL2_add
-#print axioms norm_ordinaryHilbertTransformL2CLM_le
-#print axioms fourier_ordinaryHilbertTransformL2
-#print axioms ordinaryHilbertTransformL2_sq
 
 end
 end HilbertL2Fourier

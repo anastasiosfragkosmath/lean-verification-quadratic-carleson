@@ -215,13 +215,6 @@ theorem finite_localized_stopping_step
     (fun J hJ ↦ hscale J (Finset.mem_filter.mp hJ).1)
     (fun J hJ ↦ (Finset.mem_filter.mp hJ).2) hx
 
-#print axioms measurable_localizedTailMaximal
-#print axioms localizedTailMaximal_indicator_parent
-#print axioms localizedTailMaximal_eq_zero_of_notMem
-#print axioms localizedTailAction_eq_good_add_children
-#print axioms localizedTailMaximal_le_good_add_children
-#print axioms localizedTailMaximal_pairing_le_good_add_children
-#print axioms finite_localized_stopping_step
 
 end KrauseLaceyStoppingRecursion
 end QuadraticCarleson

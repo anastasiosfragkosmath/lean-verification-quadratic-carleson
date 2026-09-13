@@ -64,6 +64,5 @@ theorem hasLogSquaredFrozenBlockWeakBounds_of_common_error
   rw [ENNReal.ofReal_mul (by positivity : 0 ≤ (2 * D + 384) * L ^ 2),
     ENNReal.ofReal_toReal hmass]
 
-#print axioms hasLogSquaredFrozenBlockWeakBounds_of_common_error
 
 end QuadraticCarleson.LacunaryFrozenBlockCommonError

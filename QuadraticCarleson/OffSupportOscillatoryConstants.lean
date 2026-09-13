@@ -109,9 +109,5 @@ theorem offSupportDecay_bound_of_step (U : ℕ → ℕ → ℝ)
         _ ≤ _ := offSupport_step_power_fraction_le k r q
           (offSupportDecayConstant_nonneg k r (q + 2)) hmu ht ha hta
 
-#print axioms offSupportDecayConstant_nonneg
-#print axioms offSupport_step_fraction_le
-#print axioms offSupport_step_power_fraction_le
-#print axioms offSupportDecay_bound_of_step
 
 end QuadraticCarleson

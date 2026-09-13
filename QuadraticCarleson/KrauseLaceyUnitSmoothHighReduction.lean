@@ -66,9 +66,6 @@ theorem enorm_roundedSmooth_le_highMax {ρ : ℝ} (hρ : 0 < ρ)
   exact le_iSup (fun r : ℕ ↦
     ‖smoothQuadraticHighPass 1 ((2 : ℝ) ^ (1 + (r : ℤ) - 3)) f x‖ₑ) m
 
-#print axioms dyadicSmoothHighPassMaxEnorm_antitone_start
-#print axioms one_le_roundedScale
-#print axioms enorm_roundedSmooth_le_highMax
 
 end
 end QuadraticCarleson.KrauseLaceyUnitSmoothHighReduction

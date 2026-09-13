@@ -162,9 +162,6 @@ theorem scaleDecayRatio_sum_le_twenty_mul_holderConjugate {p : ℝ}
   scaleDecayRatio_sum_le_twenty_mul_q
     (holderConjugate_ge_two hp hp2)
 
-#print axioms scale_decay_sum_le_twenty_mul_holderConjugate
-#print axioms scaleDecayRatio_gap
-#print axioms scaleDecayRatio_sum_le_twenty_mul_holderConjugate
 
 end
 end QuadraticCarleson

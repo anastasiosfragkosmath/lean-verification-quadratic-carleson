@@ -32,6 +32,5 @@ theorem lacunary_principalValue_endpoint :
   HilbertMaximalWeakResolved.lacunary_principalValue_endpoint
     LacunaryFrozenBlockDirectResolved.hasUniformL0LogSquaredFrozenBlockWeakBounds
 
-#print axioms lacunary_principalValue_endpoint
 
 end QuadraticCarleson.LacunaryEndpointDirectResolved

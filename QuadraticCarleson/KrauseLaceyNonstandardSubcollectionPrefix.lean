@@ -117,10 +117,6 @@ theorem eLpNorm_badSubcollectionPrefixMaximal_le
   exact hasSignedSumSquareBound_badSubcollectionGenerations hf I₀ k₀ s hk₀ hs scale
     hlam hparent hsub N hN M
 
-#print axioms hasSignedSumSquareBound_badSubcollectionGenerations
-#print axioms badSubcollectionPrefixMaximal_ae_eq
-#print axioms memLp_badSubcollectionPrefixMaximal
-#print axioms eLpNorm_badSubcollectionPrefixMaximal_le
 
 end KrauseLaceyBadScale
 end QuadraticCarleson

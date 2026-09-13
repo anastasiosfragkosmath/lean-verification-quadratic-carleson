@@ -58,8 +58,6 @@ theorem sum_energyStandard_physicalTail_diagonalEnergy_le
     (fun I hI ↦ scale_le_of_mem_energyStandard_physicalTail I₀ k₀ s ell scale N hN hI)
   convert h using 1 <;> congr 1 <;> ring
 
-#print axioms scale_le_of_mem_energyStandard_physicalTail
-#print axioms sum_energyStandard_physicalTail_diagonalEnergy_le
 
 end KrauseLaceyBadScale
 end QuadraticCarleson

@@ -176,10 +176,6 @@ theorem sum_energyStandard_physicalTail_crossRows_le
         (fun I hI ↦ (Finset.mem_filter.mp (Finset.mem_filter.mp (hT hI)).1).2.1))
       (by positivity [intervalL1Average_nonneg f I₀])
 
-#print axioms energyStandardIntervals_subset
-#print axioms sum_energyStandard_crossPairing_le
-#print axioms sum_abs_inner_energyStandard_crossRow_le
-#print axioms sum_energyStandard_physicalTail_crossRows_le
 
 end KrauseLaceyBadScale
 end QuadraticCarleson

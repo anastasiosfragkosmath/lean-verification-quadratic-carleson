@@ -68,9 +68,6 @@ theorem eLpNorm_paperPrunedActivePrefixMaximal_le
   have hr : (Nat.log2 (activeOverlapCutoff s) : ℝ) ≤ 2 * (s : ℝ) + 1 := by exact_mod_cast h
   linarith
 
-#print axioms activeOverlapCutoff_le
-#print axioms log2_activeOverlapCutoff_le
-#print axioms eLpNorm_paperPrunedActivePrefixMaximal_le
 
 end KrauseLaceyBadScale
 end QuadraticCarleson

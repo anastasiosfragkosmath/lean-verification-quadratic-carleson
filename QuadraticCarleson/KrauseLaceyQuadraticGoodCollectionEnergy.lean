@@ -115,7 +115,6 @@ theorem localizedEnergy_completeFiniteShiftGridTree_goodCollection_le
     (finiteShiftGridScale topScale shift) hgoodScale f hgap hM hgoodMass I hI
     hIscale
 
-#print axioms localizedEnergy_completeFiniteShiftGridTree_goodCollection_le
 
 end
 end KrauseLaceyQuadraticDirectPartition

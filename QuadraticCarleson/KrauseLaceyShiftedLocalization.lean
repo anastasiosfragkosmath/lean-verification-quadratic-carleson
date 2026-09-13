@@ -236,11 +236,6 @@ theorem exists_finite_localizedSum_eq_globalConvolution
       krauseLaceyFixedScaleLocalizedSum_eq_convolution j S hf2 x
     _ = _ := by rw [hinput]
 
-#print axioms centralThirdTileParents_pairwiseDisjoint
-#print axioms existsUnique_mem_centralThirdTileParent
-#print axioms krauseLaceyFixedScaleInput_eq_of_support_subset
-#print axioms exists_finite_centralThird_localization
-#print axioms exists_finite_localizedSum_eq_globalConvolution
 
 end
 end KrauseLaceyShiftedLocalization

@@ -64,12 +64,6 @@ theorem locallyIntegrable_dilatedOperator_of_continuous (a : ℝ) (ha : 0 < a)
     (f : L0Infinity) : LocallyIntegrable (dilatedOperator a ha T f) volume :=
   (continuous_dilatedOperator a ha hT f).locallyIntegrable
 
-#print axioms L0Infinity.dilate_add
-#print axioms L0Infinity.dilate_smul
-#print axioms isSublinear_dilatedOperator
-#print axioms absoluteValue_dilatedOperator
-#print axioms continuous_dilatedOperator
-#print axioms locallyIntegrable_dilatedOperator_of_continuous
 
 end SparseDilationRegularity
 end

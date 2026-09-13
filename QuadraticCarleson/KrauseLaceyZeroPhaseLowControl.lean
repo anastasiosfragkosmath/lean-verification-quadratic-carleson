@@ -108,11 +108,6 @@ theorem coe_finiteFullDyadicSuffixMaxNNNorm_one_low_le_hilbertMaximal_add_maxima
       (coe_finiteFullDyadicSuffixMaxNNNorm_zero_le_hilbertMaximal_add_maximal
         j N hfm hfi hf2 x) le_rfl)
 
-#print axioms smoothQuadraticHighPass_enorm_le_hilbertTrunc_add_maximal
-#print axioms finiteFullDyadicTail_succ_eq_finiteQuadraticDyadicBlock
-#print axioms finiteFullDyadicSuffix_zero_enorm_le_hilbertMaximal_add_maximal
-#print axioms coe_finiteFullDyadicSuffixMaxNNNorm_zero_le_hilbertMaximal_add_maximal
-#print axioms coe_finiteFullDyadicSuffixMaxNNNorm_one_low_le_hilbertMaximal_add_maximal
 
 end
 end KrauseLaceyZeroPhaseLowControl

@@ -375,12 +375,6 @@ theorem weak_one_one_finiteZeroHilbertTruncationDifferenceMax_explicit {N : ℕ}
   rw [hfun]
   exact weak_one_one_finiteAnnularHilbertMax_explicit ε R hε hR hα hf
 
-#print axioms weak_one_one_annularHilbertTruncation
-#print axioms weak_one_one_annularHilbertTruncation_explicit
-#print axioms annularHilbertTruncation_eq_zeroTrunc_sub
-#print axioms weak_one_one_finiteAnnularHilbertMax
-#print axioms weak_one_one_finiteAnnularHilbertMax_explicit
-#print axioms weak_one_one_finiteZeroHilbertTruncationDifferenceMax_explicit
 
 end
 end HilbertFiniteTruncationWeakOneOne

@@ -83,7 +83,5 @@ theorem signed_sum_sq_le_diagonal_add_crossRows
       (mul_le_one₀ (hc i hi) (abs_nonneg _) (hc j hj)) (abs_nonneg _)
     _ = _ := one_mul _
 
-#print axioms sum_abs_inner_eq_diagonal_add_crossRows
-#print axioms signed_sum_sq_le_diagonal_add_crossRows
 
 end QuadraticCarleson.KrauseLaceyOrderedEnergy

@@ -170,13 +170,6 @@ theorem paperLacunaryOscillatoryMaximal_L0Infinity_levelSet_le_scaled_orlicz
         (g : ℝ → ℂ) lacunaryHighCutoff 0 C
       exact hblock g)
 
-#print axioms paperLacunaryOscillatoryMaximal_const_mul
-#print axioms lacunary_levelSet_eq_three_normalized
-#print axioms paperLog_three_mul_le
-#print axioms lacunaryOrlicz_three_mul_le
-#print axioms paperLacunaryOscillatoryMaximal_levelSet_le_scaled_orlicz
-#print axioms paperLacunaryOscillatoryMaximal_levelSet_le_scaled_orlicz_of_uniform
-#print axioms paperLacunaryOscillatoryMaximal_L0Infinity_levelSet_le_scaled_orlicz
 
 end LacunaryOscillatoryScaling
 end QuadraticCarleson

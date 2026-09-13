@@ -115,8 +115,6 @@ theorem hasUnitScaleOffsetSmoothSparseBound_of_native_and_comparison
   exact hasSparseOnePBound_scaleOffset_of_native_and_comparison
     hC hD hcompare a ha s p hp hp2
 
-#print axioms hasSparseOnePBound_scaleOffset_of_native_and_comparison
-#print axioms hasUnitScaleOffsetSmoothSparseBound_of_native_and_comparison
 
 end
 end QuadraticCarleson.KrauseLaceyScaleOffsetBridge

@@ -224,15 +224,6 @@ theorem exists_finiteThreeShiftFamily_localization_all_depths
     exists_finiteThreeShiftFamily_localization f topScale depth
   exact ⟨E, hE⟩
 
-#print axioms finiteShiftGridInterval_mem_completeFiniteShiftGridForest
-#print axioms completeFiniteShiftGridTree_subset_forest
-#print axioms completeFiniteShiftGridForest_subset_some_root
-#print axioms completeFiniteShiftGridForest_laminar
-#print axioms completeFiniteShiftGridForest_length_eq_scale
-#print axioms finiteShiftGridRootIntervals_pairwiseDisjoint
-#print axioms completeFiniteShiftGridTree_disjoint_of_ne_root
-#print axioms finiteOneShiftMultiscaleFamily_subset_completeForest
-#print axioms exists_finiteThreeShiftFamily_localization_all_depths
 
 end
 

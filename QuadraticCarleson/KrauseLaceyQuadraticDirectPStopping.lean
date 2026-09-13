@@ -441,16 +441,6 @@ theorem hasOneNodePStoppingGoodPartPairingBound_directQuadratic :
             (directQuadraticOneNodeConstant * holderConjugate p) *
           pStoppingSparseAtom p f g I := bot_le
 
-#print axioms directQuadraticNormalizedCoefficient_ne_top
-#print axioms directQuadraticOneNodeConstant_nonneg
-#print axioms ofReal_directQuadraticOneNodeConstant
-#print axioms exists_nat_strictUpperBound_finset_int
-#print axioms krauseLaceyLocalizedPiece_congr_ae
-#print axioms localizedTailMaximal_congr_ae
-#print axioms intervalRestrictionL0Infinity_ae_eq_zero_of_localAverage_eq_zero
-#print axioms localizedTailMaximal_eq_zero_of_rootAverage_eq_zero
-#print axioms pStopping_good_part_pairing_directQuadratic_of_pos_averages
-#print axioms hasOneNodePStoppingGoodPartPairingBound_directQuadratic
 
 end
 end KrauseLaceyQuadraticDirectPStopping

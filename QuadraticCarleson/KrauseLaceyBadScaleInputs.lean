@@ -362,15 +362,6 @@ theorem sum_intervalBadInput_mass_le_local
   exact integral_mono (integrable_finsetSum _ (fun J _ ↦ (hint J).norm.integrableOn))
     hf.norm.integrableOn (sum_norm_intervalBadInput_le f I₀ k₀ s scale hlam N hN hlen)
 
-#print axioms badScaleCells_pairwiseDisjoint
-#print axioms norm_badScaleInput_le
-#print axioms stoppingChild_mass_le
-#print axioms badScaleInput_localMass_le
-#print axioms integral_window_sum_indicators_le
-#print axioms badScaleInput_unitWindowMass_le
-#print axioms badScale_indices_eq_of_ne_zero
-#print axioms sum_intervalBadInput_mass_le
-#print axioms sum_intervalBadInput_mass_le_local
 
 end KrauseLaceyBadScale
 end QuadraticCarleson

@@ -175,11 +175,6 @@ theorem hasExtendedWeakL1Bound_centeredHardyLittlewoodMaximal_enorm
   rw [ENNReal.ofReal_mul (by norm_num : (0 : ℝ) ≤ 4),
     ENNReal.ofReal_ofNat, ENNReal.ofReal_toReal hmass]
 
-#print axioms HasExtendedWeakL1Bound.mono_output
-#print axioms HasExtendedWeakL1Bound.mono_constant
-#print axioms HasExtendedWeakL1Bound.restrict
-#print axioms hasExtendedWeakL1Bound_of_le_two_mul_add_sixteen_mul
-#print axioms hasExtendedWeakL1Bound_centeredHardyLittlewoodMaximal_enorm
 
 end ExtendedWeakL1Combinators
 end QuadraticCarleson

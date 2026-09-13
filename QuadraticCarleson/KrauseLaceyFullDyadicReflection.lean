@@ -290,14 +290,6 @@ theorem smoothQuadraticHighPass_enorm_le_fullDyadicTailSupEnorm
     simpa only [ofReal_norm] using
       (le_iSup (fun m : ℕ ↦ ‖finiteFullDyadicTail lam j m f x‖ₑ) n)
 
-#print axioms fullDyadicKernel_eq_positive_sub_reflect
-#print axioms reflectedPositiveDyadicConvolution
-#print axioms finiteFullDyadicTail_eq_positive_sub_reflect
-#print axioms norm_finiteFullDyadicTail_le_positive_add_reflect
-#print axioms finiteFullDyadicTailMaxNNNorm_le_positive_add_reflect
-#print axioms finiteFullDyadicSuffixMaxNNNorm_le_positive_add_reflect
-#print axioms tendsto_finiteFullDyadicTail_atTop
-#print axioms smoothQuadraticHighPass_enorm_le_fullDyadicTailSupEnorm
 
 end
 end KrauseLaceyFullDyadicReflection

@@ -154,10 +154,5 @@ theorem bohrSet_volume_real_comparable {k : ℕ} {ρ : ℝ}
   ⟨bohrSet_volume_real_ge hk hρ0.le (by linarith),
     bohrSet_volume_real_le (by omega) hρ0.le hρ⟩
 
-#print axioms bohrRightCell_subset
-#print axioms bohrSet_volume_real_ge
-#print axioms bohrSet_subset_integerCover
-#print axioms bohrSet_volume_real_le
-#print axioms bohrSet_volume_real_comparable
 
 end QuadraticCarleson

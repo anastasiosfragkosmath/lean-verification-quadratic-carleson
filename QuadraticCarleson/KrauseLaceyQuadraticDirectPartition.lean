@@ -509,16 +509,6 @@ theorem integral_window_norm_smallestScaleInput_le
       · intro J hJ
         exact hmass J hJ
 
-#print axioms smallestSelectedRegion_disjoint
-#print axioms exists_mem_smallestSelectedRegion_of_mem_carrier
-#print axioms sum_indicator_smallestSelectedRegion_eq
-#print axioms sum_indicator_smallestSelectedRegion_centralThird_eq
-#print axioms sum_grouped_selectedRegions_centralThird_eq
-#print axioms norm_smallestScaleInput_eq_sum
-#print axioms norm_smallestScaleInput_le_norm
-#print axioms sum_integral_norm_smallestSelectedRegion_le
-#print axioms sum_integral_norm_smallestScaleInput_le
-#print axioms integral_window_norm_smallestScaleInput_le
 
 end
 end KrauseLaceyQuadraticDirectPartition
