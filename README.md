@@ -9,9 +9,9 @@ Carleson Operator*](https://arxiv.org/abs/2609.04101).
 The following main results have been formally verified in Lean:
 
 - failure of modular estimates below `t log₂ t` for the lacunary operator and
-  the resulting full-operator consequence;
-- the full-modulation `L log L` principal-value endpoint;
-- the lacunary `L (log₂ L)² log₄ L` principal-value endpoint.
+  the resulting full-modulation operator consequence;
+- the full-modulation operator `L log L` modular estimate.
+- the lacunary operator `L (log₂ L)² log₄ L`  modular estimate.
 
 `lake build` checks the complete development with Lean's kernel. The explicit
 axiom audit reports only Lean and Mathlib's standard logical axioms:
