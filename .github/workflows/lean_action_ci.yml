@@ -14,10 +14,22 @@ jobs:
 
     steps:
       - uses: actions/checkout@v5
+      # This development produces roughly 10 GB of temporary .lake artifacts.
+      # These directories are preinstalled tools on the disposable GitHub runner,
+      # not project files or GitHub cache contents.
+      - name: Free runner disk space
+        run: |
+          sudo rm -rf /usr/local/lib/android
+          sudo rm -rf /usr/share/dotnet
+          sudo rm -rf /opt/ghc
+          df -h
       - name: Test proof-policy rejection behavior
         run: python3 -B scripts/test_proof_policy.py
       - name: Enforce no-placeholder source policy
         run: python3 scripts/check_proof_policy.py --source-only
       - uses: leanprover/lean-action@v1
+        with:
+          build: true
+          use-mathlib-cache: true
       - name: Enforce explicit theorem axiom allowlist
         run: python3 scripts/check_proof_policy.py
