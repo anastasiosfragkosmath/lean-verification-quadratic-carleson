@@ -17,6 +17,11 @@ The following main results have been formally verified in Lean:
 axiom audit reports only Lean and Mathlib's standard logical axioms:
 `propext`, `Classical.choice`, and `Quot.sound`.
 
+The four headline declarations are also checked by the manual
+[Comparator workflow](.github/workflows/run-comparator.yml), which compares
+the fixed statements in [`Challenge.lean`](Challenge.lean) with the completed
+proof development made available through [`Solution.lean`](Solution.lean).
+
 This repository reports local Lean verification: the included proofs are
 checked by Lean's kernel with the pinned toolchain. The
 [verification report](docs/verification-report.md) records the scope and
