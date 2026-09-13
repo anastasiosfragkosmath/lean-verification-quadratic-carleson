@@ -1,0 +1,16 @@
+# Lean and Lake build products
+/.lake/
+*.olean
+*.ilean
+
+# Editor and operating-system metadata
+.DS_Store
+**/.DS_Store
+.vscode/
+.idea/
+.direnv/
+
+# Local working material; do not commit it to the public repository.
+/tmp/
+/LeanBackup_*/
+/UTM_Transfer/
